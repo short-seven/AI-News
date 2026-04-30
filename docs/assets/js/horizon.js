@@ -213,9 +213,41 @@
     }
   }
 
+  /** Set up 🌙/☀️ theme toggle (dark cyberpunk ↔ light horizon dawn) */
+  function setupThemeToggle() {
+    var btn = document.createElement('button');
+    btn.className = 'theme-toggle';
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'Toggle theme');
+
+    // Read saved theme, default to dark
+    var saved = null;
+    try { saved = localStorage.getItem('horizon-theme'); } catch (e) { /* noop */ }
+    var currentTheme = saved === 'light' ? 'light' : 'dark';
+
+    function applyTheme(theme) {
+      currentTheme = theme;
+      document.documentElement.setAttribute('data-theme', theme);
+      btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+      btn.title = theme === 'dark' ? '切换到浅色模式 / Switch to Light' : '切换到深色模式 / Switch to Dark';
+      try { localStorage.setItem('horizon-theme', theme); } catch (e) { /* noop */ }
+    }
+
+    btn.addEventListener('click', function () {
+      applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    });
+
+    // Insert before lang toggle
+    document.body.insertBefore(btn, document.body.firstChild);
+
+    // Initialize
+    applyTheme(currentTheme);
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     processScoreBadges();
     markSemanticElements();
+    setupThemeToggle();
     setupLanguageToggle();
   });
 })();
