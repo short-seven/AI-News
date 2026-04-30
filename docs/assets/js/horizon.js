@@ -65,7 +65,13 @@
     }
 
     function normalizeSlug(slug) {
-      return (slug || '').replace(/-(zh|en)$/i, '');
+      var s = (slug || '');
+      // Strip trailing language suffix: "summary-zh" -> "summary", "summary-en" -> "summary"
+      s = s.replace(/-(zh|en)$/i, '');
+      // If slug IS the language code itself ("zh" or "en"), normalize to empty
+      // so that bare zh/en posts with same date can match each other
+      if (/^(zh|en)$/i.test(s)) s = '';
+      return s;
     }
 
     function findArticleTarget(lang) {
@@ -168,12 +174,21 @@
       // Prefer metadata-based mapping across languages.
       target = findArticleTarget(lang);
 
-      // Fallback: old URL suffix replacement logic.
+      // Fallback 1: slug is "xxx-zh" / "xxx-en" (e.g. /2026/04/30/summary-zh.html)
       if (!target && lang === 'en' && /-zh(?:\.html)?$/.test(path.replace(/\/$/, ''))) {
         target = path.replace(/-zh(\.html)?$/, '-en$1').replace(/-zh\/$/, '-en/');
       } else if (!target && lang === 'zh' && /-en(?:\.html)?$/.test(path.replace(/\/$/, ''))) {
         target = path.replace(/-en(\.html)?$/, '-zh$1').replace(/-en\/$/, '-zh/');
       }
+
+      // Fallback 2: slug is bare "zh" / "en" (e.g. /2026/04/30/zh.html)
+      if (!target) {
+        var bareMatch = path.match(/^(.*\/)(zh|en)(\.html)?(\/)?$/);
+        if (bareMatch && bareMatch[2] !== lang) {
+          target = bareMatch[1] + lang + (bareMatch[3] || '') + (bareMatch[4] || '');
+        }
+      }
+
       if (target) window.location.href = target;
     }
 
