@@ -64,6 +64,15 @@
       return out || '/';
     }
 
+    function getHomeUrl() {
+      var links = document.querySelectorAll('a[href]');
+      for (var i = 0; i < links.length; i++) {
+        var href = links[i].getAttribute('href') || '';
+        if (/\/(?:index\.html)?$/.test(href) || href === '/') return href;
+      }
+      return '/';
+    }
+
     function normalizeSlug(slug) {
       return (slug || '').replace(/-(zh|en)$/i, '');
     }
@@ -174,7 +183,13 @@
       } else if (!target && lang === 'zh' && /-en(?:\.html)?$/.test(path.replace(/\/$/, ''))) {
         target = path.replace(/-en(\.html)?$/, '-zh$1').replace(/-en\/$/, '-zh/');
       }
-      if (target) window.location.href = target;
+      if (target) {
+        window.location.href = target;
+        return;
+      }
+
+      // If no counterpart article exists, fall back to homepage in chosen language.
+      window.location.href = getHomeUrl();
     }
 
     function setLang(lang) {
