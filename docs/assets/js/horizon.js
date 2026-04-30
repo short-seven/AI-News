@@ -43,6 +43,75 @@
 
   /** Set up EN/中文 language toggle as a page-level control */
   function setupLanguageToggle() {
+    function getPostsData() {
+      if (Array.isArray(window.HORIZON_POSTS)) return window.HORIZON_POSTS;
+      var el = document.getElementById('horizon-posts-data');
+      if (!el) return [];
+      try {
+        return JSON.parse(el.textContent || '[]');
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function normalizePath(path) {
+      if (!path) return '/';
+      var out = path;
+      if (!/^\//.test(out)) out = '/' + out;
+      out = out.replace(/\/index\.html$/, '/');
+      out = out.replace(/\.html$/, '');
+      out = out.replace(/\/+$/, '');
+      return out || '/';
+    }
+
+    function normalizeSlug(slug) {
+      return (slug || '').replace(/-(zh|en)$/i, '');
+    }
+
+    function findArticleTarget(lang) {
+      var posts = getPostsData();
+      if (!posts.length) return null;
+
+      var currentPath = normalizePath(window.location.pathname);
+      var current = null;
+
+      for (var i = 0; i < posts.length; i++) {
+        if (normalizePath(posts[i].url) === currentPath) {
+          current = posts[i];
+          break;
+        }
+      }
+      if (!current) return null;
+
+      var target = null;
+      var keyByRef = current.ref && current.ref.trim();
+      var keyByDate = current.date && current.date.trim();
+      var keyBySlug = normalizeSlug(current.slug);
+
+      for (var j = 0; j < posts.length; j++) {
+        var p = posts[j];
+        if (p.lang !== lang) continue;
+
+        if (keyByRef && p.ref === keyByRef) {
+          target = p.url;
+          break;
+        }
+      }
+
+      if (!target && keyByDate) {
+        for (var k = 0; k < posts.length; k++) {
+          var p2 = posts[k];
+          if (p2.lang !== lang) continue;
+          if (p2.date === keyByDate && normalizeSlug(p2.slug) === keyBySlug) {
+            target = p2.url;
+            break;
+          }
+        }
+      }
+
+      return target ? normalizePath(target) : null;
+    }
+
     // Create toggle buttons
     var toggle = document.createElement('div');
     toggle.className = 'lang-toggle';
@@ -95,9 +164,14 @@
     function switchArticleLang(lang) {
       var path = window.location.pathname;
       var target = null;
-      if (lang === 'en' && /-zh(?:\.html)?$/.test(path.replace(/\/$/, ''))) {
+
+      // Prefer metadata-based mapping across languages.
+      target = findArticleTarget(lang);
+
+      // Fallback: old URL suffix replacement logic.
+      if (!target && lang === 'en' && /-zh(?:\.html)?$/.test(path.replace(/\/$/, ''))) {
         target = path.replace(/-zh(\.html)?$/, '-en$1').replace(/-zh\/$/, '-en/');
-      } else if (lang === 'zh' && /-en(?:\.html)?$/.test(path.replace(/\/$/, ''))) {
+      } else if (!target && lang === 'zh' && /-en(?:\.html)?$/.test(path.replace(/\/$/, ''))) {
         target = path.replace(/-en(\.html)?$/, '-zh$1').replace(/-en\/$/, '-zh/');
       }
       if (target) window.location.href = target;

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: 紧跟AI时事
 ---
 
 # Horizon
