@@ -56,6 +56,11 @@ class AnthropicClient(AIClient):
         kwargs = {"api_key": api_key}
         if config.base_url:
             kwargs["base_url"] = config.base_url
+        # Set explicit timeout to avoid hanging on slow proxy (connect 10s, read 60s)
+        import httpx
+        kwargs["http_client"] = httpx.AsyncClient(
+            timeout=httpx.Timeout(120.0, connect=10.0)
+        )
 
         self.client = AsyncAnthropic(**kwargs)
         self.model = config.model
@@ -90,6 +95,11 @@ class AnthropicClient(AIClient):
             system=system,
             messages=[{"role": "user", "content": user}]
         )
+        # Extract text from response, skipping ThinkingBlock from extended thinking models
+        text_content = next(
+            (block.text for block in message.content if hasattr(block, "text")),
+            ""
+        )
         usage = getattr(message, "usage", None)
         if usage is not None:
             record_usage(
@@ -97,7 +107,7 @@ class AnthropicClient(AIClient):
                 input_tokens=getattr(usage, "input_tokens", 0),
                 output_tokens=getattr(usage, "output_tokens", 0),
             )
-        return message.content[0].text
+        return text_content
 
 
 class OpenAIClient(AIClient):

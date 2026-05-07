@@ -41,7 +41,7 @@ data/seen.json
 data/summaries/*.md
 data/subscribers.json
 
-docs/_posts/*.md
+# docs/_posts/*.md  # Posts are tracked so GitHub Pages can serve them
 
 # Logs
 logs/*.log

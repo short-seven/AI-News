@@ -7,7 +7,7 @@ from pydantic import BaseModel, HttpUrl, Field
 
 
 class SourceType(str, Enum):
-    """Supported information source types."""
+    """Supported information source types."""   
     GITHUB = "github"
     HACKERNEWS = "hackernews"
     RSS = "rss"

@@ -65,7 +65,7 @@ class ContentAnalyzer:
         return analyzed_items
 
     @retry(
-        stop=stop_after_attempt(3),
+        stop=stop_after_attempt(1),
         wait=wait_exponential(min=2, max=10)
     )
     async def _analyze_item(self, item: ContentItem) -> None:
@@ -128,10 +128,13 @@ class ContentAnalyzer:
             discussion_section=discussion_section
         )
 
-        # Get AI completion
-        response = await self.client.complete(
-            system=CONTENT_ANALYSIS_SYSTEM,
-            user=user_prompt,
+        # Get AI completion (30s timeout to avoid hanging on slow proxy)
+        response = await asyncio.wait_for(
+            self.client.complete(
+                system=CONTENT_ANALYSIS_SYSTEM,
+                user=user_prompt,
+            ),
+            timeout=120.0,
         )
 
         # Parse JSON response with robust fallback
