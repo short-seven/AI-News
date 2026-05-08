@@ -85,19 +85,34 @@ class AnthropicClient(AIClient):
         Returns:
             str: Generated text
         """
-        temperature = self.temperature if temperature is None else temperature
         max_tokens = self.max_tokens if max_tokens is None else max_tokens
 
-        message = await self.client.messages.create(
-            model=self.model,
-            max_tokens=max_tokens,
-            temperature=temperature,
-            system=system,
-            messages=[{"role": "user", "content": user}]
+        # Detect thinking/reasoning models (e.g., MiMo) that require explicit
+        # thinking parameter to produce a TextBlock alongside ThinkingBlock.
+        is_thinking_model = any(
+            kw in self.model.lower()
+            for kw in ("mimo", "thinking", "o1", "o3", "deepseek-r1")
         )
+
+        kwargs = {
+            "model": self.model,
+            "max_tokens": max_tokens,
+            "system": system,
+            "messages": [{"role": "user", "content": user}],
+        }
+
+        if is_thinking_model:
+            # Thinking models require temperature=1 and explicit thinking config
+            kwargs["temperature"] = 1.0
+            kwargs["thinking"] = {"type": "enabled", "budget_tokens": min(4096, max_tokens // 2)}
+        else:
+            temperature = self.temperature if temperature is None else temperature
+            kwargs["temperature"] = temperature
+
+        message = await self.client.messages.create(**kwargs)
         # Extract text from response, skipping ThinkingBlock from extended thinking models
         text_content = next(
-            (block.text for block in message.content if hasattr(block, "text")),
+            (block.text for block in message.content if block.type == "text" and hasattr(block, "text")),
             ""
         )
         usage = getattr(message, "usage", None)
