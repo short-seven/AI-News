@@ -5,408 +5,407 @@ date: 2026-05-08
 lang: zh
 ---
 
-> From 36 items, 17 important content pieces were selected
+> From 39 items, 18 important content pieces were selected
 
 ---
 
-1. [Linux 内核严重 'Dirty Frag' 漏洞致所有主流发行版暂无补丁](#item-1) ⭐️ 9.0/10
-2. [Anthropic 发布用于自然语言自编码器的开放权重模型](#item-2) ⭐️ 8.0/10
-3. [Mozilla 利用 Claude Mythos 预览版加固 Firefox，修复数百个漏洞](#item-3) ⭐️ 8.0/10
-4. [腾讯 Hy3 预览版模型调用量激增十倍，登顶 OpenRouter 周榜](#item-4) ⭐️ 8.0/10
-5. [小米开源 OmniVoice：极简架构实现 646 语种语音克隆 TTS](#item-5) ⭐️ 8.0/10
-6. [Triton v3.7.0 发布，引入新前端操作与后端优化](#item-6) ⭐️ 7.0/10
-7. [Canvas 学习管理系统遭勒索软件攻击，期末考试期间服务中断](#item-7) ⭐️ 7.0/10
-8. [AI 智能体需要控制流，而非更多提示词](#item-8) ⭐️ 7.0/10
-9. [Cloudflare 宣布裁员 1100 名员工，占其员工总数的 20%](#item-9) ⭐️ 7.0/10
-10. [DeepMind 发布 AlphaEvolve：基于 Gemini 的编码智能体，用于科学发现](#item-10) ⭐️ 7.0/10
-11. [针对苹果 Metal 优化的 DeepSeek 4 Flash 本地推理引擎发布](#item-11) ⭐️ 7.0/10
-12. [AI 生成垃圾内容通过泛滥与真实性危机破坏在线社区](#item-12) ⭐️ 7.0/10
-13. [Chrome 移除关于设备端 AI 数据处理的隐私声明](#item-13) ⭐️ 7.0/10
-14. [Anthropic 达成协议使用 xAI 备受争议的 Colossus 数据中心](#item-14) ⭐️ 7.0/10
-15. [苹果批准京东方为中国 iPhone 17 Pro 供应屏幕，三星独家供应折叠 OLED](#item-15) ⭐️ 7.0/10
-16. [Anthropic 与 SpaceX 达成算力合作，提升 Claude 使用限额](#item-16) ⭐️ 7.0/10
-17. [OpenAI 发布新一代语音转文本与文本转语音模型](#item-17) ⭐️ 7.0/10
+1. [Anthropic 发布自然语言自编码器以提升 AI 可解释性](#item-1) ⭐️ 9.0/10
+2. [Linux 内核严重'Dirty Frag'漏洞可无密码提权，主流发行版均无补丁](#item-2) ⭐️ 9.0/10
+3. [DeepMind 的 AlphaEvolve 智能体展示广泛的优化影响力](#item-3) ⭐️ 8.0/10
+4. [巴西 Pix 支付系统面临维萨和万事达卡的竞争压力。](#item-4) ⭐️ 8.0/10
+5. [AI 垃圾内容侵蚀在线社区的真实性并加重审核负担](#item-5) ⭐️ 8.0/10
+6. [Mozilla 使用 Claude Mythos 加固 Firefox 安全性](#item-6) ⭐️ 8.0/10
+7. [小米开源 OmniVoice：极简 TTS 支持 646 语种语音克隆](#item-7) ⭐️ 8.0/10
+8. [OpenAI Codex 推出 Chrome 扩展，实现代理在浏览器内执行任务](#item-8) ⭐️ 8.0/10
+9. [Triton v3.7.0 发布，新增 FP8 和缩放批量矩阵乘法支持](#item-9) ⭐️ 7.0/10
+10. [ShinyHunters 黑客攻击迫使 Canvas 学习管理系统在大学期末考试期间停机](#item-10) ⭐️ 7.0/10
+11. [博客文章建议谨慎安装新软件以应对供应链攻击风险](#item-11) ⭐️ 7.0/10
+12. [Cloudflare 宣布裁员 20%](#item-12) ⭐️ 7.0/10
+13. [火人节的制图流程确保环境清理](#item-13) ⭐️ 7.0/10
+14. [Agents need control flow, not more prompts](#item-14) ⭐️ 7.0/10
+15. [DeepSeek 4 Flash 推理引擎针对 Apple Metal 发布](#item-15) ⭐️ 7.0/10
+16. [OpenAI 升级语音模型：推出可控文本转语音及改进的语音转录](#item-16) ⭐️ 7.0/10
+17. [工信部批准 6 GHz 频段用于 6G 技术试验](#item-17) ⭐️ 7.0/10
+18. [ChatGPT 新增“信任联系人”功能，可就自残风险通知亲友](#item-18) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Linux 内核严重 'Dirty Frag' 漏洞致所有主流发行版暂无补丁](https://github.com/V4bel/dirtyfrag) ⭐️ 9.0/10
+## [Anthropic 发布自然语言自编码器以提升 AI 可解释性](https://www.anthropic.com/research/natural-language-autoencoders) ⭐️ 9.0/10
 
-安全研究员 Hyunwoo Kim (@v4bel) 公开披露了一个名为 'Dirty Frag' 的 Linux 内核严重本地提权漏洞，其概念验证利用代码已于 2026 年 5 月 7 日在 GitHub 发布。该漏洞允许非特权用户无需密码即可获取 root 权限，且由于协调披露流程被破坏，包括 Ubuntu、RHEL 和 Fedora 在内的所有主流发行版目前均无可用补丁。 这是一个影响几乎所有主流 Linux 发行版的严重、未修补的零日漏洞，能够实现简单的本地提权至 root，对服务器、云环境和容器化工作负载构成严重威胁。由于缺乏可用补丁且漏洞利用代码已公开，这给全球系统管理员带来了紧迫的安全危机。 该漏洞链结合了两个独立缺陷：一个存在于 IPsec ESP 模块（约自 2017 年起受影响），需要创建用户命名空间的权限；另一个存在于 RxRPC 模块（自 2023 年起受影响），完全无需特殊权限。两者结合使得单一攻击程序可在各发行版上通用。上游内核已合并了针对 ESP 模块的修复，但 RxRPC 模块的补丁尚未合并，且 CVE 编号也尚未分配。
+Anthropic 发布了自然语言自编码器（NLA）和开源权重模型，这些工具能够将 Qwen、Gemma 和 Llama 等现有模型的内部激活转换为自然语言文本，从而推动了理解 AI 模型内部运作的研究。 此次发布为可解释性领域提供了一个前景广阔的新工具，允许研究人员对模型的内部状态生成自然语言解释，这可能有助于更好地理解、调试和控制不同架构的大语言模型。 自然语言自编码器由一个将激活编码为文本的“语言化器”模型和一个试图逆转此过程的“重构器”组成，但作者指出，训练目标本身并未约束解释文本必须是人类可读的或语义上准确的。
 
-telegram · zaihuapd · May 7, 23:07
+hackernews · instagraham · May 7, 17:54
 
-**背景**: 该漏洞根植于 Linux 内核的零拷贝发送路径，具体涉及 `splice()` 系统调用，该调用通过传递页面缓存引用来移动数据。它与之前的 Dirty Pipe (CVE-2022-0847) 和 Copy Fail (CVE-2026-31431) 等漏洞属于同一类别，即存在缺陷允许向内核页面缓存中的只读内存页写入数据。页面缓存是内核存储从磁盘读取的文件副本以加速访问的内存区域。
+**背景**: 自编码器是一种旨在通过将数据编码到潜在空间然后重构来学习数据高效表示的神经网络架构。在 AI 可解释性研究领域，研究人员致力于开发能够解释复杂模型内部计算和表示的工具，这通常被称为“模型理解”。开源权重模型是指其训练参数（权重）被公开发布的 AI 模型，允许研究界进行更广泛的审查和使用。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Copy_Fail">Copy Fail - Wikipedia</a></li>
-<li><a href="https://www.bugcrowd.com/blog/what-we-know-about-copy-fail-cve-2026-31431/">What we know about Copy Fail (CVE-2026-31431) | @Bugcrowd</a></li>
-<li><a href="https://almalinux.org/blog/2026-05-07-dirty-frag/">Dirty Frag vulnerability fix is ready for testing - AlmaLinux OS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Autoencoder">Autoencoder - Wikipedia</a></li>
+<li><a href="https://www.neuronpedia.org/llama3.3-70b-it/nla">Natural Language Autoencoders – Llama3.3-70B-IT ｜</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论强调了该漏洞与近期 Copy Fail 漏洞的相似性，一些评论者批评发行版默认启用像 IPsec 和 RxRPC 这样很少使用的内核模块，认为这是不负责任的。其他人则指出披露流程被破坏，并对保密协议被违反导致当前无补丁状态表示沮丧。
+**社区讨论**: 社区反应认为这是一个重要的进步，一位专家称之为“首个……似乎是一条通往模型理解的可行路径”的方法。然而，一个关键疑虑被提出：生成的文本是否真正反映了模型的内部“思考”，还是仅仅是听起来合理的内容，这引发了关于如何验证这些解释的疑问。
 
-**标签**: `#linux-kernel`, `#security`, `#vulnerability`, `#privilege-escalation`, `#zero-copy`
+**标签**: `#AI interpretability`, `#natural language autoencoders`, `#open-source AI`, `#model understanding`, `#Anthropic`
 
 ---
 
 <a id="item-2"></a>
-## [Anthropic 发布用于自然语言自编码器的开放权重模型](https://www.anthropic.com/research/natural-language-autoencoders) ⭐️ 8.0/10
+## [Linux 内核严重'Dirty Frag'漏洞可无密码提权，主流发行版均无补丁](https://github.com/V4bel/dirtyfrag) ⭐️ 9.0/10
 
-Anthropic 发布了自然语言自编码器（NLAs）的开放权重模型，这是一种将大型语言模型（如 Qwen 2.5、Gemma 3 和 Llama 3.3）的内部激活转换为人类可读的自然语言文本的方法。 这一进展是人工智能可解释性领域的重要一步，它为研究人员提供了一种新颖且可能更直接的方法，以理解模型在推理过程中的“思考”内容，这对安全测试和调试至关重要。 NLA 系统由两个模块组成：一个“激活语言化器”从激活生成文本描述，以及一个“激活重建器”将描述映射回激活，两者通过强化学习联合训练。研究指出的一个关键注意事项是，生成的文本并未被约束为必须人类可读或语义准确，这意味着系统可能会发明自己的“语言”。
+安全研究员金贤宇公开披露了 Linux 内核中一个名为“Dirty Frag”的严重本地提权漏洞，其概念验证漏洞利用已于 2026 年 5 月 7 日在 GitHub 上公开，任何本地用户均可借此无需密码获得 root 权限。 此漏洞影响所有主流 Linux 发行版，包括 Ubuntu、RHEL 和 Fedora，导致数百万系统目前处于无保护状态，鉴于其高影响性和公开漏洞利用的存在，需要立即采取缓解措施。 该漏洞由两个缺陷链式组合而成：一个在 IPsec ESP 模块中（约自 2017 年起受影响），另一个在 RxRPC 协议模块中（自 2023 年起受影响），两者结合允许通过零拷贝 splice 路径对只读的页面缓存页执行写操作；建议的缓解措施是将 esp4、esp6 和 rxrpc 内核模块加入黑名单。
 
-hackernews · instagraham · May 7, 17:54
+telegram · zaihuapd · May 7, 23:07
 
-**背景**: AI 模型激活是神经网络在处理信息时的内部数值状态；理解它们是机制可解释性研究的核心目标。开放权重模型是指其训练好的参数（权重）公开可用的大型语言模型，允许他人使用、研究和修改。这项工作建立在 Anthropic 先前的可解释性研究基础之上，例如识别模型中的特定“特征”。
+**背景**: Linux 内核使用“零拷贝”机制实现高效数据传输，即在文件 I/O 和网络等子系统之间传递页面引用而不实际复制数据。“splice”系统调用可以在文件描述符和管道之间移动数据，内核的页面缓存则将最近访问的文件数据存储在内存中。此漏洞利用了一个场景：在网络加密操作期间，缓存中的只读页面被错误地标记为可写，从而允许攻击者覆盖敏感的系统文件。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.anthropic.com/research/natural-language-autoencoders">Natural Language Autoencoders \ Anthropic</a></li>
-<li><a href="https://transformer-circuits.pub/2026/nla/">Natural Language Autoencoders Produce Unsupervised ...</a></li>
-<li><a href="https://www.ai21.com/glossary/foundational-llm/open-weights-model/">What is an Open-Weights Model? | AI21</a></li>
+<li><a href="https://cybersecuritynews.com/dirty-frag-linux-vulnerability/">Dirty Frag Linux Vulnerability Let Attackers Gain Root Privileges on...</a></li>
+<li><a href="https://venturasystems.tech/blog/dirty-frag/">Dirty Frag: The New "Dirty" Linux Privilege Escalation You Should Know About | Ventura Systems — Cybersecurity & MDR</a></li>
+<li><a href="https://docs.kernel.org/networking/rxrpc.html">RxRPC Network Protocol — The Linux Kernel documentation</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论参与度很高，用户赞扬 Anthropic 通过在 Hugging Face 上发布权重来参与开源社区。然而，关于生成的文本是否真正反映了模型的内部状态，还是仅仅是“听起来合理”的文本，存在重大的技术争论，这凸显了为解释提供依据的挑战。
+**社区讨论**: 社区讨论指出，此漏洞的根本原因与先前的 Copy Fail 等漏洞相似，有用户认为过度依赖 AI 进行漏洞研究可能会阻碍发现此类复杂漏洞链所需的探索性思维。另有用户建议发行版应更加精简，默认只包含必要的内核模块，类似 Android 的 GKI 内核方法，以减小攻击面。讨论中还就导致写原语的具体漏洞组件进行了技术辩论。
 
-**标签**: `#AI interpretability`, `#machine learning`, `#open source`, `#model understanding`, `#Anthropic`
+**标签**: `#linux kernel`, `#security vulnerability`, `#privilege escalation`, `#exploit`, `#zero-day`
 
 ---
 
 <a id="item-3"></a>
-## [Mozilla 利用 Claude Mythos 预览版加固 Firefox，修复数百个漏洞](https://simonwillison.net/2026/May/7/firefox-claude-mythos/#atom-everything) ⭐️ 8.0/10
+## [DeepMind 的 AlphaEvolve 智能体展示广泛的优化影响力](https://deepmind.google/blog/alphaevolve-impact/) ⭐️ 8.0/10
 
-Mozilla 利用其对 Anthropic 公司 Claude Mythos 预览版模型的访问权限，识别并修复了 Firefox 中的数百个安全漏洞，导致其月度漏洞修复数量从通常的 20-30 个激增至 2026 年 4 月的 423 个。 这展示了 AI 驱动安全实践的重大飞跃，表明先进的模型在得到妥善利用时，能够从生成嘈杂的报告转变为可靠地发现像主流浏览器这样复杂、真实世界软件中深层次的、长期存在的漏洞。 成功归因于模型能力的提升以及 Mozilla 改进的引导、扩展和堆叠模型以过滤噪声的技术；值得注意的是，AI 的许多尝试性攻击被 Firefox 现有的纵深防御措施所阻止。
-
-rss · Simon Willison · May 7, 17:56
-
-**背景**: Claude Mythos Preview 是 Anthropic 公司的一款前沿 AI 模型，据称是其有史以来最强大的模型，因其强大的网络安全能力而被故意限制公开发布。AI 驱动的漏洞管理是一种新兴实践，机器学习模型通过分析代码来预测和识别安全缺陷，旨在领先于威胁。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.linkedin.com/pulse/anthropics-claude-mythos-preview-ai-model-too-powerful-ahmed-albadri-om6qf?tl=en">Anthropic's Claude Mythos Preview : The AI Model Too Powerful to...</a></li>
-<li><a href="https://pub.towardsai.net/the-ai-model-that-scared-its-own-creators-inside-anthropics-claude-mythos-preview-ac80b14177ea">Claude Mythos Preview : The AI Model Too Dangerous... | Towards AI</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI security`, `#Firefox`, `#vulnerability detection`, `#Claude Mythos`, `#software hardening`
-
----
-
-<a id="item-4"></a>
-## [腾讯 Hy3 预览版模型调用量激增十倍，登顶 OpenRouter 周榜](https://finance.sina.com.cn/tech/shenji/2026-05-07/doc-inhwzrtp8521239.shtml) ⭐️ 8.0/10
-
-腾讯混元 Hy3 预览版模型上线两周后，其 Token 调用总量已超过上一代模型 Hy2 的十倍。根据 OpenRouter 过去一周的数据，该模型在平台周榜总榜以及编程与工具调用场景中均位列第一。 这一快速采用表明腾讯最新的大型语言模型在市场上获得了显著关注，尤其是在编程和 AI 智能体等面向开发者的应用场景中，使其成为全球 AI 领域的有力竞争者。在 OpenRouter 这一主要的多模型 API 市场上的表现，验证了其对广大开发者的实用性和吸引力。 Hy3 是一个拥有 2950 亿参数的混合专家（MoE）模型，其中活跃参数为 210 亿，旨在提升复杂推理和编码任务的能力。代码和智能体类场景的调用增长尤为明显，在腾讯 WorkBuddy 和 Codebuddy 等应用中的总增幅超过 16.5 倍，且在 OpenRouter 上初期开启限免是为了收集真实场景反馈以指导后续迭代。
-
-telegram · zaihuapd · May 7, 05:34
-
-**背景**: OpenRouter 是一个统一的 API 和市场，它通过单一接口为开发者提供来自不同供应商的数百种 AI 模型，从而简化了模型管理和路由。函数调用或工具使用是现代大型语言模型（LLM）的一项关键能力，使其能够理解用户请求并执行预定义的功能或与外部工具交互，这对于构建复杂的 AI 智能体和应用程序至关重要。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://huggingface.co/tencent/Hy3-preview">tencent/Hy3-preview - Hugging Face</a></li>
-<li><a href="https://docs.nvidia.com/nemo/automodel/nightly/model-coverage/llm/tencent/hy3.html">Hy3 (HunyuanLarge) — NeMo-AutoModel</a></li>
-<li><a href="https://www.infoworld.com/article/4163276/former-openai-research-scientist-launches-new-ai-model-for-tencent.html">Former OpenAI research scientist launches new AI model for Tencent | InfoWorld</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#Tencent`, `#OpenRouter`, `#Programming`, `#LLM`
-
----
-
-<a id="item-5"></a>
-## [小米开源 OmniVoice：极简架构实现 646 语种语音克隆 TTS](https://mp.weixin.qq.com/s/TCS_Sd10g_rvf1cszw673A) ⭐️ 8.0/10
-
-小米开源了 OmniVoice 多语言语音克隆 TTS 模型，该模型采用极简双向 Transformer 架构，通过全码本随机掩蔽和大语言模型预训练参数提升效率与可懂度，支持 646 种语言的零样本语音克隆。 此次发布通过覆盖 646 种语言（包括众多低资源语言）并提供高效开源方案，极大地扩展了高质量多语言语音合成的可及性。其极简架构和训练效率有望降低全球范围内开发和部署先进 TTS 应用的门槛。 该模型基于 50 个开源数据集构建的 58 万小时、646 语种数据集进行训练，声称在 24 种语言上超越商用系统，在 102 种语言上接近真实语音质量。它支持跨语言克隆、自定义音色、带噪适配和发音纠正等功能，训练代码、推理代码及模型权重均已开源。
-
-telegram · zaihuapd · May 7, 10:06
-
-**背景**: 文本转语音（TTS）是一种将书面文本转换为可听语音的技术。语音克隆指的是从一段短音频样本中复制特定人声音的能力。Transformer 架构最初为序列到序列任务设计，已成为人工智能领域的主流模型，其双向变体（如 BERT）擅长从两个方向理解上下文。OmniVoice 采用极简双向 Transformer 进行 TTS，代表了一种旨在平衡性能与效率的特定架构选择。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/pdf/2604.00688">OmniVoice: Towards Omnilingual Zero-Shot Text-to- Speech with...</a></li>
-<li><a href="https://hyper.ai/en/papers/2604.00688">OmniVoice: Towards Omnilingual Zero-Shot Text-to- Speech ... | HyperAI</a></li>
-<li><a href="https://altools.ai/15788.html">OmniVoice – A multilingual TTS (Text-to- Speech ) model open-sourced...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#text-to-speech`, `#voice-cloning`, `#multilingual-AI`, `#open-source`, `#transformer`
-
----
-
-<a id="item-6"></a>
-## [Triton v3.7.0 发布，引入新前端操作与后端优化](https://github.com/triton-lang/triton/releases/tag/v3.7.0) ⭐️ 7.0/10
-
-Triton v3.7.0 引入了新的前端操作，如 `tl.squeeze`/`tl.unsqueeze` 和 FP8 常量创建，同时带来了后端优化，包括对 2CTA 模式的支持以及新的 Proton 性能分析工具。 此版本增强了 Triton 作为 AI/ML 领域关键 GPU 编程工具的能力，为开发者提供了更高效的方式来编写和优化面向 NVIDIA 及 AMD 平台的高性能内核。 主要新增功能包括前端直接创建 FP8 常量、用于内核分析的 Proton 性能分析工具，以及针对先进 GPU 架构在 2CTA 模式和带多播的 TMA 方面的重要后端工作。
-
-github · atalman · May 7, 22:19
-
-**背景**: Triton 是一种开源的 GPU 编程语言和编译器，旨在简化为 AI 和深度学习编写高性能代码的过程。它采用基于 Python 的 JIT 编译模型，将内核定义为装饰函数。FP8 是一种 8 位浮点格式，可提高 AI 工作负载的内存和计算效率。HIP 是 AMD 用于 GPU 计算的编程接口，允许代码在 NVIDIA 和 AMD 平台之间移植。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://openai.com/index/triton/">Introducing Triton : Open-source GPU programming for... | OpenAI</a></li>
-<li><a href="https://developer.nvidia.com/blog/floating-point-8-an-introduction-to-efficient-lower-precision-ai-training/">Floating-Point 8: An Introduction to Efficient, Lower ...</a></li>
-<li><a href="https://rocm.docs.amd.com/projects/HIP/en/latest/index.html">HIP documentation — HIP 7.2.53211 Documentation - AMD</a></li>
-
-</ul>
-</details>
-
-**标签**: `#triton`, `#gpu-programming`, `#compiler`, `#ai-ml`, `#performance`
-
----
-
-<a id="item-7"></a>
-## [Canvas 学习管理系统遭勒索软件攻击，期末考试期间服务中断](https://www.theverge.com/tech/926458/canvas-shinyhunters-breach) ⭐️ 7.0/10
-
-由 Instructure 运营的广泛使用的教育平台 Canvas 学习管理系统因勒索软件攻击而下线，导致大学期末考试中断。此次攻击据信由 ShinyHunters 组织发起，造成了严重的服务中断，并立即引发了对数据安全的担忧。 此事件凸显了集中式云端教育基础设施的关键脆弱性，在一个高风险的学术阶段直接影响了数百万学生和教育工作者。它突显了整个行业在保护关键数字服务免受日益复杂的网络威胁方面所面临的更广泛挑战。 攻击者被确认为 ShinyHunters 组织，而 Instructure 最初将中断描述为“计划内维护”，这一说法与中断的性质及社区报告相矛盾。此事件暴露了该公司在事件响应沟通方面可能存在的不足，并已引发了关于潜在服务等级协议违约和法律后果的讨论。
-
-hackernews · stefanpie · May 7, 22:22
-
-**背景**: Canvas 是由 Instructure 开发的一款基于云的学习管理系统，被 K-12 学校、高等教育机构和企业培训师广泛采用，用于管理课程、传递内容和进行评估。Instructure 成立于 2008 年，是教育技术领域的主要参与者。像 Canvas 这样的学习管理系统是现代数字教育的核心，处理从作业提交到成绩跟踪的所有事务。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Canvas_(LMS)">Canvas (LMS)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Instructure">Instructure - Wikipedia</a></li>
-<li><a href="https://www.instructure.com/canvas">Canvas by Instructure: World Leading LMS for Teaching & Learning</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区反应表达了对期末考试中断的极大不满，用户报告称 Canvas 和他们的大学都缺乏清晰的沟通。主要观点包括对 Canvas 事件响应的批评、关于是否应立法禁止支付赎金的争论，以及对大型大学为何不自建学习管理系统以获得更大控制权的惊讶。
-
-**标签**: `#cybersecurity`, `#ransomware`, `#education-technology`, `#cloud-security`, `#incident-response`
-
----
-
-<a id="item-8"></a>
-## [AI 智能体需要控制流，而非更多提示词](https://bsuh.bearblog.dev/agents-need-control-flow/) ⭐️ 7.0/10
-
-文章主张对 AI 智能体设计进行根本性转变，倡导采用稳健、显式的控制流机制，而非当前通过设计日益复杂的提示词来处理任务的趋势。 这一观点挑战了主流的“提示词工程”范式，表明对于可靠、可扩展且可维护的智能体而言，结构化的控制逻辑比提示词的精巧设计更为关键，这将影响开发者构建自主系统的方式。 核心论点是，依赖提示词处理复杂的多步骤任务会导致系统脆弱和不可预测，而嵌入控制流（如循环、条件判断和状态管理）则能提供确定性的结构。社区实例展示了使用提示词处理数百个文件等任务时的失败，从而强化了对程序化控制的需求。
-
-hackernews · bsuh · May 7, 16:43
-
-**背景**: 在基于大语言模型（LLM）的智能体语境中，“提示词”指的是设计自然语言指令来引导模型行为。“控制流”是一个编程概念，描述单个语句、指令或函数调用的执行顺序。争论的焦点在于，智能体主要应由精巧的提示词引导，还是由显式的、编码的逻辑来编排 LLM 的能力，使其在定义好的工作流中运行。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/pdf/2505.23643">[PDF] Securing AI Agents with Information-Flow Control - arXiv</a></li>
-<li><a href="https://medium.com/@georgetaskos/control-flow-architecture-the-governance-layer-nobody-sees-2f7e52e54768">Control Flow Architecture: The Governance Layer Nobody Sees | by George Taskos</a></li>
-<li><a href="https://dl.acm.org/doi/10.1145/3691620.3695360">LLM4Workflow: An LLM-based Automated Workflow Model ...</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区讨论强烈认同文章的前提，从业者分享了在需要可靠性的任务中，复杂提示词失败的真实案例。关于解决方案出现了关键争论：一些人主张使用 LLM 来编写确定性代码，而不是直接执行任务；另一些人则正在构建专用的运行时引擎，以从外部强制实施结构化的控制流。
-
-**标签**: `#AI agents`, `#control flow`, `#prompting`, `#software engineering`, `#LLMs`
-
----
-
-<a id="item-9"></a>
-## [Cloudflare 宣布裁员 1100 名员工，占其员工总数的 20%](https://blog.cloudflare.com/building-for-the-future/) ⭐️ 7.0/10
-
-Cloudflare 在一篇题为'Building for the Future'的博客文章中宣布裁员 1100 名员工，约占其员工总数的 20%。 此次裁员意义重大，因为它反映了科技行业更广泛的趋势，如成本削减措施和 AI 投资的影响，并影响了一家主要的云服务提供商。 裁员补偿方案包括截至 2026 年底的全额基本工资、医疗保险，以及为离职员工加速股权归属，并豁免一年归属期要求。
-
-hackernews · PriorityLeft · May 7, 20:23
-
-**背景**: Cloudflare 是一家主要的互联网安全和性能公司，提供内容分发网络和 DDoS 防护等服务。近年来，由于经济压力和业务战略调整，科技行业经历了多次裁员，这通常与 AI 投资有关。
-
-**社区讨论**: 社区讨论对企业信息持怀疑态度，用户批评'Building for the Future'这一标题具有委婉性，并指出过去招聘公告的讽刺之处。此外，还有关于 AI 投资财务影响的担忧，认为裁员可能源于 AI 成本未带来收益，而非效率提升。
-
-**标签**: `#layoffs`, `#cloudflare`, `#tech-industry`, `#employment`, `#corporate-announcements`
-
----
-
-<a id="item-10"></a>
-## [DeepMind 发布 AlphaEvolve：基于 Gemini 的编码智能体，用于科学发现](https://deepmind.google/blog/alphaevolve-impact/) ⭐️ 7.0/10
-
-谷歌 DeepMind 发布了 AlphaEvolve，这是一个由其 Gemini 大语言模型驱动的进化编码智能体，旨在解决极具挑战性的科学和算法发现问题。 这标志着在应用人工智能自动化和规模化科学发现与算法优化过程方面迈出了重要一步，有望加速多个技术领域的突破。 AlphaEvolve 采用进化算法框架，其中候选解决方案（例如新算法或数学对象）由大语言模型生成，然后自动评估，使其能够迭代改进复杂问题。
+DeepMind 发布了关于 AlphaEvolve 的一年进展更新，展示了其由 Gemini 驱动的进化编码智能体在跨多个复杂领域设计先进算法方面的扩展影响力。 AlphaEvolve 证明，精心设计的问题环境对于 AI 智能体在复杂的真实世界优化任务中取得高影响力成果至关重要，为未来 AI 驱动的科学发现树立了先例。 该智能体结合了大语言模型（特指 Gemini）和进化算法，通过迭代操作来生成、评估和演化针对预定义计算挑战的代码解决方案。
 
 hackernews · berlianta · May 7, 15:02
 
-**背景**: AI 编码智能体是一种利用大语言模型来编写、修改或优化代码的系统。进化算法是一种受生物进化启发的优化技术，通过迭代选择和改进候选解决方案。Gemini 是谷歌 DeepMind 的多模态大语言模型系列。
+**背景**: 进化算法是受生物进化启发的优化方法，利用变异和选择等过程在复杂问题空间中寻找解决方案。编码代理是一种可以自主编写、修改和测试软件代码以实现目标的 AI 系统。AlphaEvolve 代表了这些理念的融合，在一个进化框架内使用大语言模型作为核心引擎来设计算法。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/AlphaEvolve">AlphaEvolve - Wikipedia</a></li>
-<li><a href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf">AlphaEvolve : A coding agent for scientific and</a></li>
-<li><a href="https://arxiv.org/abs/2506.13131">[2506.13131] AlphaEvolve: A coding agent for scientific and ...</a></li>
+<li><a href="https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/">AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms — Google DeepMind</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 讨论反映了兴奋与怀疑并存的情绪。一些用户引用了 Antirez 的观点，认为人工智能擅长优化定义明确的问题空间，而另一些人则质疑谷歌工程师自己是否更喜欢使用这个工具而非 Claude 等替代品。讨论中也提出了关于谷歌底层 Gemini API 服务稳定性和容量的实际担忧。
+**社区讨论**: 社区讨论强调了两个主要观点：承认其在定义明确的问题上取得了令人印象深刻的专注成果，同时提醒成功在很大程度上取决于精心设计的评估环境，而不仅仅是大语言模型的能力。另一个受关注的观点是，外界认为 DeepMind 优先考虑此类基础性研究，而不是竞争对手所追逐的商业编码工具。
 
-**标签**: `#AI`, `#coding agents`, `#DeepMind`, `#Gemini`, `#optimization`
+**标签**: `#AI`, `#coding agents`, `#evolutionary algorithms`, `#DeepMind`, `#software engineering`
 
 ---
 
-<a id="item-11"></a>
-## [针对苹果 Metal 优化的 DeepSeek 4 Flash 本地推理引擎发布](https://github.com/antirez/ds4) ⭐️ 7.0/10
+<a id="item-4"></a>
+## [巴西 Pix 支付系统面临维萨和万事达卡的竞争压力。](https://www.elciudadano.com/en/brazils-pix-payment-system-faces-pressure-from-visa-and-mastercard/04/04/) ⭐️ 8.0/10
 
-一位开发者发布了一个专门优化的本地推理引擎，该引擎利用苹果的 Metal API 运行 DeepSeek 4 Flash 模型，专注于在苹果芯片硬件上的性能和能效。 该项目展示了为大型模型打造高度优化、硬件专用推理引擎的潜力，这可能会激励更多开发者创建定制化解决方案，以在其特定硬件上实现性能最大化，超越通用框架的局限。 该引擎以其能效著称，据报道一台 MacBook M3 Max 在全速生成 token 时峰值功耗仅为 50 瓦。社区讨论也提出了关于大型初始提示可能带来延迟的问题，但建议通过缓存机制来缓解常规使用中的这一问题。
+巴西的国家即时支付系统 Pix 正面临来自全球银行卡网络维萨和万事达卡的激烈竞争压力，其中万事达卡巴西公司首席执行官公开质疑央行在监管市场的同时参与市场竞争的公平性。 这场冲突凸显了国家金融基础设施项目与成熟的全球支付公司之间的根本性紧张关系，可能为新兴经济体如何创建替代主导性私营支付轨道的自主系统树立先例。 Pix 是由巴西央行运营的即时支付系统，而维萨和万事达卡是收取交易手续费的私营营利性网络；核心争论在于监管机构是否能同时成为公平的市场竞争者。
 
-hackernews · tamnd · May 7, 15:40
+hackernews · wslh · May 7, 17:42
 
-**背景**: DeepSeek 4 Flash 是一个大型的混合专家（MoE）语言模型，总参数量达 2840 亿，其中 130 亿在推理时被激活，并支持长达一百万 token 的上下文长度。苹果的 Metal 是一个底层图形和计算 API，可直接访问苹果设备上的 GPU，从而实现高性能的机器学习推理。本地推理引擎直接在用户设备上运行 AI 模型，相比基于云的 API 提供了隐私和成本优势，但通常需要大量优化才能达到云端的性能水平。
+**背景**: Pix 于 2020 年 11 月由巴西央行推出，旨在促进个人、企业和政府实体之间免费、即时、全天候的数字支付，极大地降低了交易的成本和摩擦。该系统借鉴了印度的统一支付接口（UPI）经验，已被广泛采用，通过提供一种廉价的公共替代方案，取代了传统的基于卡的支付和银行票据（Boleto）支付，成为巴西金融科技生态系统的基石。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek-ai/DeepSeek-V4-Flash · Hugging Face</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Metal_(API)">Metal ( API ) - Wikipedia</a></li>
-<li><a href="https://medium.com/@muruganantham52524/ollama-vs-openai-local-vs-cloud-ai-performance-cost-and-use-cases-0d25fea5f049">Ollama vs OpenAI: Local vs Cloud AI — Performance, Cost... | Medium</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pix_(payment_system)">Pix (payment system) - Wikipedia</a></li>
+<li><a href="https://stripe.com/resources/more/pix-replacing-cards-cash-brazil">A guide to Pix payments in Brazil | Stripe</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区反应总体积极，用户赞扬了该项目在学习模型推理方面的教育价值及其对硬件特定优化的关注。一位用户分享了他们为学生构建的针对 Qwen3 模型的类似项目，而另一位用户则强调了更多人有机会为其特定硬件（如 AMD W7900 GPU）优化推理的机遇。也有用户对处理超大初始输入的延迟表示了一定担忧。
+**社区讨论**: 社区讨论强烈支持 Pix，用户称赞其革命性影响，因为它提供了廉价、即时的转账，并通过避免卡网络收取的商户费用来促成折扣。讨论中还反复出现地缘政治叙事，将 Pix 视为巴西和欧盟等国家减少对美国控制支付系统依赖的更广泛运动的一部分，同时也引发了关于央行同时扮演监管者和市场参与者是否合适的争论。
 
-**标签**: `#AI inference`, `#Metal API`, `#DeepSeek`, `#open-source`, `#hardware optimization`
+**标签**: `#payment systems`, `#fintech`, `#regulation`, `#Brazil`, `#competition`
 
 ---
 
-<a id="item-12"></a>
-## [AI 生成垃圾内容通过泛滥与真实性危机破坏在线社区](https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/) ⭐️ 7.0/10
+<a id="item-5"></a>
+## [AI 垃圾内容侵蚀在线社区的真实性并加重审核负担](https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/) ⭐️ 8.0/10
 
-一篇博客文章及其大量的评论区（431 条评论）详细描述了 AI 生成内容（即“AI 垃圾”）如何正在积极破坏在线社区，用户分享了个人实验，版主则描述了与之斗争的升级情况。 这个问题触及了在线互动的核心，侵蚀了旨在促进人际连接的数字空间中的信任与真实性，可能导致用户流失并从根本上改变数字社区的性质。 版主报告每月需封禁数百个 AI 账户，这带来了巨大的新运营成本；同时用户指出，AI 生成的评论通常与人类评论难以区分，使得检测成为一项重大挑战。
+一篇引发广泛讨论的文章详细阐述了激增的 AI 生成内容如何通过压垮版主、稀释人际互动以及营造一个越来越难以找到真实交流的环境来损害在线社区。 这一趋势威胁着在线社区的核心价值——真实的人际连接与共享的交流——并可能迫使这些平台在审核方式乃至整体结构上发生根本性转变以求存续。 社区版主报告了巨大的运营负担，一个例子指出每月需封禁约 600 个 AI 内容创作者账户，产生了大量额外成本和工作量。此外，AI 生成的评论正变得与人类编写的无法区分，甚至能欺骗其他用户。
 
 hackernews · thm · May 7, 18:46
 
-**背景**: “AI 垃圾”指的是由 AI 工具生成的低质量、模板化内容，通常重数量而轻实质。在线社区传统上依赖用户生成内容来创造价值，但先进大语言模型（LLM）的普及使得用令人信服但不真实的帖子和评论淹没这些空间变得轻而易举。
+**背景**: “AI 垃圾内容”一词指的是大批量生产、低质量的 AI 生成内容，其优先考虑产出数量和速度，而非意义或原创性。它的泛滥得益于生成式 AI 工具，这些工具使得创建文本、图片和评论变得轻而易举，通常用于垃圾信息发送、刷取积分或隐蔽广告等目的。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/AI_slop">AI slop - Wikipedia</a></li>
-<li><a href="https://theconversation.com/what-is-ai-slop-a-technologist-explains-this-new-and-largely-unwelcome-form-of-online-content-256554">What is AI slop? A technologist explains this new and largely ...</a></li>
-<li><a href="https://www.contentgrip.com/how-to-spot-ai-generated-text/">How to spot AI-generated text: with or without tools</a></li>
+<li><a href="https://www.identity.org/what-is-ai-slop-and-why-is-it-everywhere-online/">What Is AI Slop and Why Is It Everywhere Online? - identity.org</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 讨论揭示了深切的担忧，一位用户描述了一项实验，其中一个 AI 代理在 Reddit 上成功刷取了“业力”（karma）并进行隐蔽广告而未被发现；一位社区版主则表达了对每天大量涌入的 AI 账户感到难以招架的恐惧。一些评论者认为，这可能会讽刺地将人们推回现实世界的互动。
+**社区讨论**: 讨论揭示了社区管理者和用户深切的担忧。情绪从担心无法赢得对抗 AI 垃圾信息的战斗，到一种更顺其自然的看法，即这种压力可能讽刺地将人类推回线下互动。许多人倡导回归基于信任的小型在线空间。
 
-**标签**: `#AI ethics`, `#Online communities`, `#LLMs`, `#Content moderation`
+**标签**: `#AI ethics`, `#online communities`, `#content moderation`, `#generative AI`, `#internet culture`
+
+---
+
+<a id="item-6"></a>
+## [Mozilla 使用 Claude Mythos 加固 Firefox 安全性](https://simonwillison.net/2026/May/7/firefox-claude-mythos/#atom-everything) ⭐️ 8.0/10
+
+Mozilla 利用 Claude Mythos Preview 人工智能模型识别并修复了 Firefox 中的数百个安全漏洞，其每月修复的漏洞数量从平均 20-30 个激增至 2026 年 4 月的 423 个。 这证明了人工智能在关键开源软件实用化、大规模安全加固方面取得了重大突破，有可能改变漏洞检测的经济性和有效性。 该人工智能引导技术成功定位了深层缺陷，包括有超过 20 年历史的漏洞，而许多由人工智能生成的利用尝试则被 Firefox 现有的纵深防御措施所阻止。
+
+rss · Simon Willison · May 7, 17:56
+
+**背景**: Claude Mythos Preview 是 Anthropic 最强大的前沿人工智能模型，因其先进的网络安全能力而正式发布。此前，向开源项目提交的人工智能生成漏洞报告通常是低质量的“垃圾”，给维护者带来高昂的验证成本，但模型能力的提升和引导技术的改进为 Mozilla 改变了这一局面。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://bicurated.com/bi-tech/are-ai-generated-bug-reports-undermining-open-source-security/">Are AI-Generated Bug Reports Undermining Open Source Security?</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区评论中有人对这种人工智能驱动的漏洞修复的可持续性表示怀疑，认为这是一次性的营销驱动行为而非永久性的工作流程变革。另有评论提醒不要将“缺陷”与经过验证的安全“漏洞”混为一谈，并指出发现的问题主要影响 Firefox 的 C++ 代码库。
+
+**标签**: `#AI`, `#cybersecurity`, `#software-vulnerability`, `#open-source`, `#Mozilla`
+
+---
+
+<a id="item-7"></a>
+## [小米开源 OmniVoice：极简 TTS 支持 646 语种语音克隆](https://mp.weixin.qq.com/s/TCS_Sd10g_rvf1cszw673A) ⭐️ 8.0/10
+
+小米开源了 OmniVoice 多语言语音克隆 TTS 模型，该模型采用极简双向 Transformer 架构，在 646 种语言上实现了最先进的性能。基于 50 个开源数据集的 58 万小时训练数据，训练速度达 10 万小时/天，PyTorch 推理速度达 40 倍实时。 这次开源发布提供了一个高性能的 TTS 模型，支持广泛的语言，能够推动语音克隆技术发展，并为多语言 AI 应用的研究人员和开发者带来益处。其效率和质量超越商用系统，是 AI 社区的重要资源。 该模型使用全码本随机掩蔽和大语言模型预训练参数来提升效率和可懂度，并支持跨语言克隆、自定义音色适配、带噪适配和发音纠正等功能。训练、推理代码及模型权重均已开源。
+
+telegram · zaihuapd · May 7, 10:06
+
+**背景**: 语音克隆和文本转语音（TTS）是人工智能技术，用于从文本生成类似人类的语音，通常使用深度学习模型。双向 Transformer（如 BERT）是神经网络架构，能够双向处理输入序列以获得更好的上下文理解。开源这类模型促进了 AI 领域的协作、创新和更广泛的可及性。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Data_masking">Data masking - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/BERT_(language_model)">BERT (language model) - Wikipedia</a></li>
+<li><a href="https://clonemyvoice.io/blog/cutting_edge_methods_for_fine_tuning_voice_clones_a_comprehe.php">Cutting-Edge Methods for Fine-Tuning Voice Clones A</a></li>
+
+</ul>
+</details>
+
+**标签**: `#TTS`, `#voice-cloning`, `#multi-language`, `#open-source`, `#AI`
+
+---
+
+<a id="item-8"></a>
+## [OpenAI Codex 推出 Chrome 扩展，实现代理在浏览器内执行任务](https://developers.openai.com/codex/changelog) ⭐️ 8.0/10
+
+OpenAI 为其 Codex AI 代理推出了一个 Chrome 扩展，使其能够在用户的浏览器内操作已登录的网站，执行页面导航和数据输入等任务。 这极大地扩展了 AI 编程代理在浏览器自动化方面的能力，有望简化涉及网页界面的复杂开发和测试工作流程。 该扩展在后台独立的标签组中运行，不干扰用户当前的工作，并且支持跨多个标签页并行执行任务以提高效率。
+
+telegram · zaihuapd · May 8, 04:17
+
+**背景**: Codex 是 OpenAI 的 AI 驱动编码助手，旨在自动化软件开发任务，如调试和测试。浏览器自动化指的是使用软件来控制网络浏览器，执行通常由人类完成的操作，例如填写表单或浏览网站。Chrome 扩展是小型软件程序，用于自定义 Chrome 浏览器体验。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://openai.com/codex/">Codex | AI Coding Partner from OpenAI | OpenAI</a></li>
+<li><a href="https://developers.openai.com/codex/subagents">Subagents – Codex | OpenAI Developers</a></li>
+<li><a href="https://chromium.googlesource.com/chromium/src/+/main/docs/threading_and_tasks.md">Chromium Docs - Threading and Tasks in Chrome</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI agents`, `#browser automation`, `#OpenAI`, `#Codex`, `#Chrome extension`
+
+---
+
+<a id="item-9"></a>
+## [Triton v3.7.0 发布，新增 FP8 和缩放批量矩阵乘法支持](https://github.com/triton-lang/triton/releases/tag/v3.7.0) ⭐️ 7.0/10
+
+Triton v3.7.0 在前端引入了缩放批量矩阵乘法支持，并允许直接创建 FP8 常量，增强了 AI/ML 工作负载的 GPU 编程。 这些改进通过启用 FP8 低精度计算和优化批量操作，使 Triton 在 AI 和机器学习应用中更高效，可以减少内存使用并加速训练。 此版本还新增了 `tl.squeeze` 和 `tl.unsqueeze` 等操作，通过减少 JIT 开销改进了前端性能，并包含了针对 AMD 和 NVIDIA GPU 的后端更新，例如对 2CTA 模式和带多播的 TMA 的支持。
+
+github · atalman · May 7, 22:19
+
+**背景**: Triton 是 OpenAI 开发的一种开源 GPU 编程语言，用于编写高效的 GPU 内核，特别适用于神经网络，相比 CUDA 简化了开发过程。FP8 是 AI 中使用的 8 位浮点数据类型，用于在 VRAM 有限的硬件上减少内存占用并加速计算。缩放批量矩阵乘法是一种优化的矩阵乘法形式，可并行处理多个矩阵，常用于深度学习以提高吞吐量和效率。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://openai.com/index/triton/">Introducing Triton: Open-source GPU programming for neural</a></li>
+<li><a href="https://developer.nvidia.com/blog/cublas-strided-batched-matrix-multiply/">Pro Tip: cuBLAS Strided Batched Matrix Multiply | NVIDIA Technical Blog</a></li>
+
+</ul>
+</details>
+
+**标签**: `#GPU Programming`, `#Compiler`, `#AI/ML`, `#Triton`, `#Release Notes`
+
+---
+
+<a id="item-10"></a>
+## [ShinyHunters 黑客攻击迫使 Canvas 学习管理系统在大学期末考试期间停机](https://www.theverge.com/tech/926458/canvas-shinyhunters-breach) ⭐️ 7.0/10
+
+黑客组织 ShinyHunters 成功攻击了 Canvas 学习管理系统（LMS），导致服务中断，并威胁要泄露窃取的学校数据。此事发生在美国多所大学的期末考试期间。 此次事件在一个极为敏感的学术时段干扰了数百万学生使用的关键教育平台，凸显了网络攻击的严重现实后果，并暴露了教育行业对集中化数字基础设施的严重依赖。 据报道，ShinyHunters 利用一个漏洞篡改了数百所院校的 Canvas 登录门户，并确认了数据泄露，这是其更广泛勒索活动的一部分。据称这是该组织第二次入侵 Canvas 背后的公司 Instructure。
+
+hackernews · stefanpie · May 7, 22:22
+
+**背景**: Canvas 是一个广泛使用的学习管理系统（LMS），学校通过它在线发布课程内容、管理作业和进行考试。ShinyHunters 是一个臭名昭著的网络犯罪勒索组织，自 2020 年左右以来与众多重大数据泄露事件有关，其通常手段是窃取数据并威胁除非支付赎否则就将其公开。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.bleepingcomputer.com/news/security/canvas-login-portals-hacked-in-mass-shinyhunters-extortion-campaign/">Canvas login portals hacked in mass ShinyHunters extortion campaign</a></li>
+<li><a href="https://www.cbsnews.com/news/cyberattack-shutters-canvas-learning-platform-for-schools-across-us/">Cyberattack shutters Canvas learning platform for schools ... - CBS News</a></li>
+<li><a href="https://gbhackers.com/canvas-confirms-data-breach-following-shinyhunters-claim/">Canvas Confirms Data Breach Following ShinyHunters Claim</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区情绪反映出广泛存在的干扰和挫败感，教师们报告在服务中断期间，大学和 Canvas 本身的沟通不畅。讨论也涉及更广泛的影响，例如当平台本身宕机时，严格的数字平台强制性要求会失效的讽刺性，以及关于采取更强有力的法律和安全措施来威慑此类攻击的辩论。
+
+**标签**: `#cybersecurity`, `#education`, `#data breach`, `#system outage`, `#LMS`
+
+---
+
+<a id="item-11"></a>
+## [博客文章建议谨慎安装新软件以应对供应链攻击风险](https://xeiaso.net/blog/2026/abstain-from-install/) ⭐️ 7.0/10
+
+xeiaso.net 上的一篇博客文章建议用户暂时避免安装新软件，因为软件供应链攻击的风险增加，这引发了社区辩论。 这一建议凸显了软件供应链中日益增长的脆弱性，可能导致广泛的安全漏洞，影响依赖开源软件包的开发者和组织。 社区评论提出了技术替代方案，例如将依赖管理器配置为仅安装几天前的软件包版本，或切换到像 FreeBSD 这样具有更协调安全更新流程的操作系统。
+
+hackernews · psxuaw · May 7, 23:02
+
+**背景**: 软件供应链攻击涉及破坏开发或分发过程，以在流行软件包中插入恶意代码，对软件完整性构成风险。像 SLSA（供应链级别软件制品）这样的框架提供了防止篡改的标准，而像 Sigstore 这样的工具则提供开源制品的安全签名和验证，以增强信任。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://slsa.dev/">SLSA • Supply-chain Levels for Software Artifacts</a></li>
+<li><a href="https://www.sigstore.dev/">Sigstore</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区讨论显示意见分歧：一些人认为延迟安装软件无效，因为攻击者可以利用时间差进行攻击；另一些人则主张采用技术解决方案，如使用较旧的软件包版本或采用像 FreeBSD 这样通过专门团队协调安全更新的安全操作系统。
+
+**标签**: `#software security`, `#supply chain attacks`, `#cybersecurity`, `#open source software`, `#risk management`
+
+---
+
+<a id="item-12"></a>
+## [Cloudflare 宣布裁员 20%](https://www.reuters.com/business/world-at-work/cloudflare-cut-over-1100-jobs-2026-05-07/) ⭐️ 7.0/10
+
+Cloudflare 宣布将裁减约 1100 名员工，占总员工数的 20%，此举被描述为“为未来而构建”。 一家主要的网络基础设施与安全提供商进行裁员，标志着科技行业的重大重组，影响大量专业工程师，并可能反映出追求效率和自动化的更广泛趋势。 公司宣布的遣散方案包括支付 2026 年底前的全额基本工资、在美国延续医保至年底，以及为离职员工免除一年的股权兑现等待期。
+
+hackernews · PriorityLeft · May 7, 20:23
+
+**背景**: Cloudflare 是一家主要的内容分发网络（CDN）、网络安全和分布式计算服务提供商。该公司近期强调了其内部 AI 代理使用量的显著增加，这表明公司正向“代理式 AI 时代”进行战略转变，可能因此需要对公司架构和员工队伍进行调整。
+
+**社区讨论**: 社区讨论主要聚焦于公司近期招聘和“构建未来”的激励性信息与随后使用相同措辞的裁员公告之间形成的强烈反差。评论也详细说明了据称非常全面的遣散方案，并包括受影响的员工分享其技术专长和寻求新工作机会的内容。
+
+**标签**: `#layoffs`, `#tech industry`, `#Cloudflare`, `#employment`, `#distributed systems`
 
 ---
 
 <a id="item-13"></a>
-## [Chrome 移除关于设备端 AI 数据处理的隐私声明](https://old.reddit.com/r/chrome/comments/1t5qayz/chrome_removes_claim_of_ondevice_al_not_sending/) ⭐️ 7.0/10
+## [火人节的制图流程确保环境清理](https://www.not-ship.com/burning-man-moop/) ⭐️ 7.0/10
 
-谷歌 Chrome 已从其文档中删除了一项具体声明，该声明曾称其设备端 AI 功能不会将用户数据发送到谷歌服务器。这一变化是在有报道称 Chrome 在用户不知情的情况下向其设备下载大型 AI 模型后不久被发现的。 这一变化直接影响了用户的隐私预期和信任，因为它移除了关于全球最流行浏览器中集成的 AI 功能数据本地化处理的关键保证。这引发了关于这些 AI 工具处理的敏感用户数据是否可能被传输到谷歌的疑问，可能影响个人用户和有严格数据合规要求的企业。 被删除的声明具体涉及设备端 AI，这是一种旨在在用户设备本地处理数据以增强隐私的技术。其时机与最近的报道相吻合，报道称 Chrome 在未经用户明确同意的情况下自动下载一个 4GB 的 AI 模型文件，这加剧了对谷歌数据处理方式的审视。
+火人节实施了一套详细的清理系统，志愿者记录并拍摄所有碎片，包括细小如厕纸的物品，使用摄影测量等技术在绿幕上计算像素以确保问责，2025 年覆盖面积达 3935 英亩。 这种数据驱动的方法为大型活动的环境问责设定了高标准，证明系统化方法可以最小化生态影响，并激励活动行业更广泛地采用可持续实践。 该流程采用 GIS 制图和摄影测量等先进技术，碎片在绿幕上拍摄以进行像素级计数确保精度，并执行与土地管理局（BLM）相同的验证测试以验证清理效果。
 
-hackernews · newsoftheday · May 7, 15:56
+hackernews · speckx · May 7, 14:06
 
-**背景**: 设备端 AI 是指直接在用户本地设备（如笔记本电脑或手机）上使用其自身处理器运行的人工智能算法，而不是将数据发送到远程云服务器进行处理。这种方法通常被宣传为更注重隐私和安全。然而，最近的调查发现，谷歌 Chrome 一直在未经明确同意的情况下向用户设备下载大型 AI 模型文件，模糊了本地处理与基于云的处理之间的界限，并引发了新的隐私担忧。
+**背景**: 火人节是一年一度在内华达州黑岩沙漠举行的社区活动，强调激进自力更生和'不留痕迹'原则，其中 MOOP（错位的物质）指必须清除的任何碎片。地理信息系统（GIS）用于环境管理的空间数据分析，摄影测量涉及从照片中提取测量值，两者在此应用以提升清理准确性。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.androidcentral.com/apps-software/why-on-device-ai-processing-is-important">What is on-device AI processing, and why is it important?</a></li>
-<li><a href="https://cybernews.com/security/google-chrome-ai-model-device-no-consent/">Google Chrome silently installing AI models on our devices ...</a></li>
-<li><a href="https://gizmodo.com/google-chrome-is-downloading-a-4gb-ai-model-onto-your-device-without-consent-researcher-warns-2000755201">Google Chrome Is Downloading a 4GB AI Model Onto Your Device ...</a></li>
+<li><a href="https://www.mdpi.com/2076-3417/15/6/3155">GIS-Based Environmental Monitoring and Analysis - MDPI</a></li>
+<li><a href="https://tinykitchenchronicles.com/from-photo-to-print-expert-photogrammetry-cleanup-tips/">From Photo to Print: Expert Photogrammetry Cleanup Tips - Tiny</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论显示出普遍的怀疑态度，许多用户认为 AI 商业模式的核心是数据收集，移除隐私声明可能预示着数据处理方式的潜在转变。一些评论者认为措辞的改变可能无害，但警告说如果 Chrome 确实开始将浏览器数据发送给谷歌，这将给企业带来重大的合规问题。还有用户推荐切换到 Brave 等内置广告拦截功能且不依赖谷歌生态系统的替代浏览器。
+**社区讨论**: 社区成员对火人节细致的清理工作表示钦佩，评论指出其与像太浩湖独立日这样更混乱的活动形成鲜明对比，并提到恶劣天气等挑战使往年的清理工作更加困难。
 
-**标签**: `#privacy`, `#AI`, `#Chrome`, `#data-collection`, `#browser`
+**标签**: `#event management`, `#environmental cleanup`, `#data analysis`, `#systems thinking`, `#community projects`
 
 ---
 
 <a id="item-14"></a>
-## [Anthropic 达成协议使用 xAI 备受争议的 Colossus 数据中心](https://simonwillison.net/2026/May/7/xai-anthropic/#atom-everything) ⭐️ 7.0/10
+## [Agents need control flow, not more prompts](https://bsuh.bearblog.dev/agents-need-control-flow/) ⭐️ 7.0/10
 
-Anthropic 已达成协议，租赁 xAI 位于孟菲斯的 Colossus 1 数据中心的全部容量，而 xAI 将保留其更大的 Colossus 2 设施用于自身的模型训练。 此次合作凸显了 AI 实验室面临的巨大算力限制，并引发了重大的伦理问题，因为 Anthropic 选择与一个以环境记录不佳而闻名的设施合作，而此时 AI 数据中心正成为一个政治敏感议题。 Colossus 1 设施因在未获得《清洁空气法》适当许可的情况下运行燃气轮机而受到批评，有可信报告将其与因空气质量问题导致的住院人数增加联系起来。另外，xAI 宣布将停用多个 Grok 模型，仅给出两周通知，引发了近期已迁移至这些模型的开发者的强烈不满。
+The article argues that AI agents require robust control flow systems rather than relying on more sophisticated prompts to effectively handle complex tasks.
 
-rss · Simon Willison · May 7, 17:09
+hackernews · bsuh · May 7, 16:43
 
-**背景**: Colossus 是 xAI 在田纳西州孟菲斯建造的一台超级计算机，于 2024 年投入运营，被认为是全球最大的 AI 训练系统之一。更广泛的背景是，随着 AI 数据中心的快速扩张，其带来的环境和资源问题——如用水量和能源消耗——日益受到关注，并成为地方和政治辩论的焦点。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Colossus_(supercomputer)">Colossus (supercomputer) - Wikipedia</a></li>
-<li><a href="https://x.ai/colossus">Colossus: The World's Largest AI Supercomputer | xAI</a></li>
-<li><a href="https://www.eli.org/vibrant-environment-blog/ais-cooling-problem-how-data-centers-are-transforming-water-use">AI ’s Cooling Problem: How Data Centers Are Transforming Water Use</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI infrastructure`, `#data centers`, `#environmental impact`, `#Anthropic`, `#xAI`
+**标签**: `#AI Agents`, `#Prompt Engineering`, `#Software Architecture`, `#Control Flow`, `#LLM Applications`
 
 ---
 
 <a id="item-15"></a>
-## [苹果批准京东方为中国 iPhone 17 Pro 供应屏幕，三星独家供应折叠 OLED](https://t.me/zaihuapd/41254) ⭐️ 7.0/10
+## [DeepSeek 4 Flash 推理引擎针对 Apple Metal 发布](https://github.com/antirez/ds4) ⭐️ 7.0/10
 
-苹果已批准京东方量产 iPhone 17 Pro 的 OLED 屏幕，首批仅供中国市场，其显示模组生产资质预计 7 月也将放行。另一方面，三星显示器已在忠南牙山 A3 厂启动苹果专用折叠 OLED 产线，月产能为 3.5 万片 6 代玻璃基板。 这标志着苹果高端显示供应链的重大多元化，纳入了一家主要的中国供应商，可能减少其对三星和 LG 的依赖。三星独家供应折叠 OLED 的交易表明苹果认真致力于推出折叠屏 iPhone，加剧了高端折叠设备市场的竞争。 京东方的首批订单仅限于中国市场，其显示模组生产资质预计将于 2024 年 7 月放行。三星的专用产线年产能约为 1500 万块 7 英寸面板，这与苹果传闻中 2026 年发布首款内折式 iPhone 的目标相符。
+一个名为 DeepSeek 4 Flash 的开源推理引擎已发布，支持在 Apple Metal 上本地运行 DeepSeek 4 模型，并针对 M3 Max 等特定硬件进行了优化，开发者还指出其能效优势。 该项目展示了社区驱动的硬件特定优化在 AI 推理中的潜力，使 DeepSeek 4 等先进模型在 Apple 设备上本地部署更加可行，从而促进学习、减少云依赖并推动创新。 该引擎针对 Apple Metal（一种用于硬件加速的底层图形 API）优化，开发者评论显示配备 M3 Max 的 MacBook 在全速推理时功耗仅为 50W，突显其能效优势。
 
-telegram · zaihuapd · May 7, 02:33
+hackernews · tamnd · May 7, 15:40
 
-**背景**: OLED（有机发光二极管）是高端智能手机的主流显示技术，具有卓越的对比度和能效。京东方是中国最大的显示面板制造商，一直在积极扩展其 OLED 产能，以与三星显示器和 LG 显示器等领先企业竞争。可折叠 OLED 显示屏需要先进的柔性基板材料和精密工程，以承受反复弯曲而不损坏。
+**背景**: DeepSeek 4 是中国公司 DeepSeek 推出的最新 AI 模型，以其效率和能力著称，已通过 NIST 等组织的评估。Apple Metal 是苹果的底层图形和计算 API，旨在 Apple 设备上实现硬件加速处理，提升 AI 推理等任务的性能。本地推理引擎允许直接在个人硬件上运行大型语言模型，减少对云服务的依赖，增强隐私和控制权。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://boe-us.com/technologies/f-oled/">f-OLED - BOE America</a></li>
-<li><a href="https://www.kingsresearch.com/blog/magic-of-foldable-displays">Foldable Display Technology: How Flexible Screens Work</a></li>
-<li><a href="https://www.boe.com/en/company/dynamic-5aa4b346f21f4e0ba531ea0611d29599">China’s first AMOLED production line - BOE Gen 6 AMOLED ...</a></li>
+<li><a href="https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/">Three reasons why DeepSeek's new model matters</a></li>
+<li><a href="https://techacute.com/a-look-at-the-potential-of-apples-metal-4/">A Look at the Potential of Apple’s Metal 4 – TechAcute</a></li>
+<li><a href="https://bulldogjob.com/readme/Local-inference-of-Language-Models-on-Apple-Silicon">Local Inference of Language Models on Apple Silicon</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Apple`, `#Supply Chain`, `#Display Technology`, `#Foldable Devices`
+**社区讨论**: 社区评论表现出积极情绪，用户对该项目的教育价值、硬件特定优化以及无需 Python 依赖的简洁性表示热情。讨论包括分享针对其他模型的类似项目、探索在 AMD GPU 等各种硬件上的优化，以及强调专注于改进开源模型的潜力。
+
+**标签**: `#AI inference`, `#Metal optimization`, `#DeepSeek`, `#local models`, `#hardware acceleration`
 
 ---
 
 <a id="item-16"></a>
-## [Anthropic 与 SpaceX 达成算力合作，提升 Claude 使用限额](https://t.me/zaihuapd/41259) ⭐️ 7.0/10
+## [OpenAI 升级语音模型：推出可控文本转语音及改进的语音转录](https://t.me/zaihuapd/41269) ⭐️ 7.0/10
 
-Anthropic 已与 SpaceX 达成合作，租用 Colossus 1 数据中心的全部算力，该中心提供超过 300 兆瓦的电力和逾 22 万块 NVIDIA GPU。作为直接成果，Claude Code 和 Claude API 的使用限制已大幅提升，Claude Code 各类付费方案的速率限制翻倍，Pro/Max 用户的高峰期限制被取消。 此次合作为 Anthropic 提供了大规模专用算力资源，这对于大规模训练和运行大型 AI 模型至关重要，从而直接提升了其 Claude 产品对开发者和终端用户的可访问性与性能。在竞争激烈的 AI 领域，算力是关键差异化因素，这笔交易是一项重大的基础设施协议。
+OpenAI 发布了新的文本转语音（TTS）和语音转文本（STT）模型，包括 gpt-4o-mini-tts、gpt-4o-transcribe 和 gpt-4o-mini-transcribe。这些模型允许开发者使用自然语言指令控制语音合成效果，并在处理口音和嘈杂环境方面提升了性能。 此次更新显著提升了 AI 语音系统的可控性和准确性，使其在需要特定语音风格或在复杂条件下清晰转录的实际应用中更为实用。这对开发和构建语音应用的企业及开发者具有重要影响。 新的文本转语音模型（gpt-4o-mini-tts）提供自然语言控制功能，允许用户指定风格；语音转录模型则减少了‘幻觉’（生成无关文本）问题。然而，OpenAI 指出某些语言的错误率仍然很高，且这些模型因规模庞大未开源，不适合本地部署。
 
-telegram · zaihuapd · May 7, 08:19
+telegram · zaihuapd · May 7, 17:19
 
-**背景**: Colossus 1 是由埃隆·马斯克旗下 SpaceX 的子公司 xAI 建造的超级计算机，专为大规模 AI 训练设计。Claude Code 是 Anthropic 的智能编程工具，能够理解代码库、编辑文件和运行命令。Claude API 允许开发者将 Anthropic 的 Claude 模型集成到自己的应用程序和服务中。
+**背景**: 文本转语音（TTS）和语音转文本（STT）是 AI 的核心能力，分别实现文字到语音和语音到文字的转换。“可控文本转语音”技术的进步旨在让开发者无需深入的声学知识也能对生成语音的音色或风格进行精细控制。语音识别中的“幻觉”是指模型生成错误或无关文本的现象，这是提升准确性的重大挑战。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Colossus_(supercomputer)">Colossus (supercomputer) - Wikipedia</a></li>
-<li><a href="https://x.ai/colossus">Colossus: The World's Largest AI Supercomputer | xAI</a></li>
-<li><a href="https://finance.yahoo.com/news/anthropic-to-rent-all-ai-capacity-at-spacexs-colossus-data-center-180327774.html">Anthropic to rent all AI capacity at SpaceX's Colossus data center - Yahoo Finance</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Whisper_(speech_recognition_system)">Whisper (speech recognition system) - Wikipedia</a></li>
+<li><a href="https://arxiv.org/abs/2211.12171">[2211.12171] PromptTTS: Controllable Text-to-Speech with Text</a></li>
+<li><a href="https://deepbrief.co/ai-research/whisper-ai-hallucination-research">AI Hallucinations Explained: Whisper Model Research</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Computing Infrastructure`, `#Partnerships`, `#Anthropic`, `#SpaceX`
+**标签**: `#OpenAI`, `#voice synthesis`, `#speech recognition`, `#AI models`, `#natural language processing`
 
 ---
 
 <a id="item-17"></a>
-## [OpenAI 发布新一代语音转文本与文本转语音模型](https://t.me/zaihuapd/41269) ⭐️ 7.0/10
+## [工信部批准 6 GHz 频段用于 6G 技术试验](https://mp.weixin.qq.com/s/sNgyr34V_TYu_3SfBckG8w) ⭐️ 7.0/10
 
-OpenAI 发布了三个新模型：文本转语音模型 gpt-4o-mini-tts，以及语音转文本模型 gpt-4o-transcribe 和 gpt-4o-mini-transcribe。开发者现在可以通过自然语言指令控制语音合成效果，以获得更逼真、更可控的输出。 此次更新显著提升了语音 AI 的可控性和准确性，使得各行各业能够开发更自然、更定制化的语音应用。它还解决了处理口音和嘈杂环境等关键痛点，尽管仍存在一些局限性。 新的语音转文本模型在减少幻觉、处理口音和噪音方面有显著提升，但某些语言的错误率仍然较高。OpenAI 未开源这些模型，因其规模较大，不适合本地部署。
+中国工业和信息化部正式向 IMT-2030（6G）推进组批复了 6 GHz 频段用于 6G 技术试验的使用许可。该许可使得该小组能够在指定地区开展技术研发攻关与测试验证工作。 这一监管批准为中国系统性的 6G 研究提供了关键且宝贵的频谱资源，可能加速其发展进程并增强中国在塑造未来全球 6G 标准中的影响力。中频段 6 GHz 频率的分配是开展下一代无线技术早期实际测试的重要一步。 试验将面向国际电信联盟确定的 6G 典型场景和关键性能指标进行。6 GHz 频段位于'Sub-6 GHz'范围内，兼顾覆盖能力与容量，使其在探索太赫兹等更高频段之前，成为早期试验的合适选择。
 
-telegram · zaihuapd · May 7, 17:19
+telegram · zaihuapd · May 8, 01:14
 
-**背景**: 文本转语音（TTS）和语音转文本（STT）是将书面文本转换为语音音频及反向转换的核心 AI 技术。语音转文本模型中的“幻觉”指的是 AI 生成了实际并未说出的文本，这在 OpenAI 的 Whisper 等系统中已被记录为一个问题。文本转语音中的自然语言控制允许用户使用简单的文本提示来指定所需的语音特征，如语气或风格。
+**背景**: IMT-2030 推进组由中国工信部于 2019 年成立，负责协调国内的 6G 研发工作。在全球范围内，6G 的发展由国际电信联盟在其 IMT-2030 框架下协调，该框架定义了超越 5G 的未来能力。尽管研究探索了太赫兹等超高频段以实现极致容量，但像 6 GHz 这样的中频段通常因其更佳的传播特性而被优先用于早期测试。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">Hallucination (artificial intelligence) - Wikipedia</a></li>
-<li><a href="https://news.cornell.edu/stories/2024/06/ai-speech-text-can-hallucinate-violent-language">AI speech-to-text can hallucinate violent language | Cornell Chronicle</a></li>
-<li><a href="https://cloud.google.com/text-to-speech">Text - to - Speech : Lifelike AI voices and speech synthesis</a></li>
+<li><a href="https://www.3glteinfo.com/6g/articles/imt-2030-explained/">IMT-2030 Explained: 6G Requirements, Use Cases, Framework, Architecture ...</a></li>
+<li><a href="https://digitalregulation.org/overview-of-6g-imt-2030/">Overview of 6G (IMT-2030) | Digital Regulation Platform</a></li>
+<li><a href="https://en.wikipedia.org/wiki/6G">6G - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#speech synthesis`, `#transcription`, `#OpenAI`, `#machine learning`
+**标签**: `#6G`, `#telecommunications`, `#frequency spectrum`, `#technology trials`, `#China`
+
+---
+
+<a id="item-18"></a>
+## [ChatGPT 新增“信任联系人”功能，可就自残风险通知亲友](https://www.theverge.com/ai-artificial-intelligence/925874/chatgpt-trusted-contact-emergency-self-harm-notification) ⭐️ 7.0/10
+
+OpenAI 为成年 ChatGPT 用户推出了可选的“信任联系人”安全功能，允许用户指定一位朋友或家人。当系统检测到用户可能谈论自残或自杀时，会通知该联系人。 这是领先 AI 平台在解决关键伦理问题和心理健康风险方面迈出的重要一步，为 AI 如何在危机干预中扮演负责任角色树立了行业先例。 通知流程需经过专门培训的团队审核对话内容，确认存在严重安全顾虑后，才会通过电子邮件、短信或应用内通知联系人，但不会共享聊天内容。该功能要求用户和联系人均为成年人，且联系人需在一周内接受邀请。
+
+telegram · zaihuapd · May 8, 02:47
+
+**背景**: 该功能是对青少年安全选项的扩展，其背景是一起悲剧事件：一名 16 岁少年在长期与 ChatGPT 交流后自杀身亡。此举也符合更广泛的行业趋势，例如 Meta 也在 Instagram 上推出了类似功能，当青少年反复搜索自残相关内容时会通知家长。
+
+**标签**: `#AI safety`, `#ChatGPT`, `#Self-harm prevention`, `#Ethical AI`
 
 ---
