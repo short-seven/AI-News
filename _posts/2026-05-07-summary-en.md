@@ -5,87 +5,152 @@ date: 2026-05-07
 lang: en
 ---
 
-> From 29 items, 16 important content pieces were selected
+> From 28 items, 13 important content pieces were selected
 
 ---
 
-1. [SQLite Endorsed by Library of Congress for Long-Term Data Preservation](#item-1) ⭐️ 8.0/10
-2. [EU Proposes Mandatory Removal of Huawei, ZTE Equipment from Telecom Networks](#item-2) ⭐️ 8.0/10
-3. [NVIDIA, OpenAI, Microsoft Release Open-Source MRC Protocol for AI Clusters](#item-3) ⭐️ 8.0/10
-4. [Apple's R&D Spending Surpasses 10% of Revenue, Focusing on AI to Reshape Hardware](#item-4) ⭐️ 8.0/10
-5. [Anthropic partners with SpaceX for compute, doubles Claude Code limits](#item-5) ⭐️ 8.0/10
-6. [Xiaomi Open-Sources OmniVoice: A Minimalist TTS Model for 646 Languages](#item-6) ⭐️ 8.0/10
-7. [Valve releases Steam Controller CAD files under Creative Commons license](#item-7) ⭐️ 7.0/10
-8. [The Illusion of Productivity in Modern Workplaces](#item-8) ⭐️ 7.0/10
-9. [AI Coding Practices Blur: Vibe Coding Meets Agentic Engineering](#item-9) ⭐️ 7.0/10
-10. [Google Cloud Launches Fraud Defense as Next-Gen reCAPTCHA](#item-10) ⭐️ 7.0/10
-11. [Developer Migrates from Supabase & Clerk to Better Auth, Citing Time Savings](#item-11) ⭐️ 7.0/10
-12. [Hallucinopedia: A Website Showcasing AI Hallucinations](#item-12) ⭐️ 7.0/10
-13. [Anthropic hosts 'Code w/ Claude 2026' developer event, live-blogged by Simon Willison](#item-13) ⭐️ 7.0/10
-14. [Google Chrome Accused of Silently Downloading 4GB AI Model](#item-14) ⭐️ 7.0/10
-15. [Apple's Display Supply Chain: BOE Gets iPhone 17 Pro Order, Samsung Exclusive for Foldable OLED](#item-15) ⭐️ 7.0/10
-16. [Tencent's Hy3 Preview Model Sees 10x More Usage Than Hy2 in Two Weeks, Tops OpenRouter Charts](#item-16) ⭐️ 7.0/10
+1. [AI's Double-Edged Sword: Productivity Gains vs. Workplace Bloat](#item-1) ⭐️ 8.0/10
+2. [Simon Willison notes vibe coding and agentic engineering are converging in his work](#item-2) ⭐️ 8.0/10
+3. [Google Cloud Fraud Defense replaces reCAPTCHA, raising device and privacy concerns.](#item-3) ⭐️ 8.0/10
+4. [Google Chrome Accused of Silently Downloading 4GB AI Model](#item-4) ⭐️ 8.0/10
+5. [EU considers mandatory removal of Huawei, ZTE gear from telecoms](#item-5) ⭐️ 8.0/10
+6. [NVIDIA, OpenAI, Microsoft Release Open-Source MRC Protocol for AI Clusters](#item-6) ⭐️ 8.0/10
+7. [Anthropic partners with SpaceX to boost Claude usage limits via massive GPU cluster.](#item-7) ⭐️ 8.0/10
+8. [Valve Open-Sources Steam Controller CAD Files for Community Use](#item-8) ⭐️ 7.0/10
+9. [SQLite Endorsed by Library of Congress for Long-Term Data Preservation](#item-9) ⭐️ 7.0/10
+10. [Val Town's Journey Through Auth Providers: Supabase, Clerk, Better Auth](#item-10) ⭐️ 7.0/10
+11. [Live Blog of Anthropic's Code w/ Claude 2026 Event](#item-11) ⭐️ 7.0/10
+12. [Apple's R&D Spending Surpasses 10% of Revenue, Fueling AI-Driven Hardware Strategy](#item-12) ⭐️ 7.0/10
+13. [Tencent's Hy3 preview model sees 10x call volume surge, tops OpenRouter weekly chart](#item-13) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [SQLite Endorsed by Library of Congress for Long-Term Data Preservation](https://sqlite.org/locrsf.html) ⭐️ 8.0/10
+## [AI's Double-Edged Sword: Productivity Gains vs. Workplace Bloat](https://nooneshappy.com/article/appearing-productive-in-the-workplace/) ⭐️ 8.0/10
 
-The Library of Congress has officially added SQLite to its Recommended Formats Statement (RFS) as a recommended storage format for digital preservation. This endorsement underscores SQLite's reliability and long-term viability, making it a trusted standard for preserving critical data and influencing digital archiving practices. The Library of Congress updates its RFS annually to identify formats that maximize preservation and accessibility, and SQLite's inclusion is based on its proven robustness and suitability for embedded databases.
+The article highlights how AI tools are simultaneously driving productivity and enabling the unnecessary elongation of workplace documents, such as requirements and status updates, creating a culture of 'performative work'. This trend impacts organizational efficiency, talent evaluation, and the core nature of software engineering work, as the focus may shift from building valuable systems to producing voluminous, AI-assisted artifacts. A key concern is that AI can be used by 'political people' to fabricate productivity and cover up problems for extended periods, potentially degrading the quality of technical work while making it appear superficially impressive.
 
-hackernews · whatisabcdefgh · May 6, 21:58
+hackernews · diebillionaires · May 6, 16:18
 
-**Background**: The Library of Congress Recommended Formats Statement (RFS) is a guide that identifies analog and digital formats suitable for long-term preservation of creative content, aiming to ensure accessibility into the future. SQLite is a lightweight, serverless database engine known for its portability, reliability, and use in applications where embedded databases are needed, such as mobile apps and desktop software.
+**Background**: Natural Language Generation (NLG) is an AI technology that automatically creates human-like text from data, which is now being widely applied to generate workplace documentation. Concurrently, Organizational Network Analysis (ONA) is a data-driven method used to map communication and relationships within a company, helping to understand how work and influence actually flow.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.loc.gov/preservation/resources/rfs/index.html">Recommended Formats Statement - Library of Congress</a></li>
-<li><a href="https://thecodersblog.com/sqlite-as-recommended-storage-format-2026/">SQLite: Library of Congress Recommended for Digital Preservation</a></li>
+<li><a href="https://3sixtyinsights.com/what-is-organizational-network-analysis/">What is Organizational Network Analysis? - 3Sixty Insights, Inc.</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussion shows a mix of admiration for SQLite's reliability and ease of use, with users sharing positive experiences in applications, while also raising concerns about its potential misuse in enterprise settings for handling sensitive data like PII, and noting the news's age.
+**Discussion**: The community strongly resonates with the critique of document 'elongation,' sharing personal experiences of bloated artifacts. There is significant concern about an 'AI gold rush' where companies prioritize flashy AI integration over sound engineering, and fears that AI will empower office politics by allowing individuals to fake competence and alignment.
 
-**Tags**: `#SQLite`, `#data storage`, `#Library of Congress`, `#databases`, `#software engineering`
+**Tags**: `#workplace productivity`, `#AI impact`, `#organizational culture`, `#software engineering`
 
 ---
 
 <a id="item-2"></a>
-## [EU Proposes Mandatory Removal of Huawei, ZTE Equipment from Telecom Networks](https://t.me/zaihuapd/41247) ⭐️ 8.0/10
+## [Simon Willison notes vibe coding and agentic engineering are converging in his work](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/#atom-everything) ⭐️ 8.0/10
 
-The European Commission is considering new regulations that would make it mandatory for all EU member states to completely phase out equipment from Huawei and ZTE in their telecom and broadband infrastructure, upgrading its previous non-binding 2020 recommendation into a legally enforceable rule. This move would significantly impact global telecom infrastructure, potentially accelerating the technological decoupling between the EU and China, and could set a precedent for other regions, while imposing substantial costs and operational challenges on member states and affecting the market position of the named Chinese companies. Under the proposed rules, member states that fail to remove the equipment by a set deadline would face infringement investigations and financial penalties; additionally, the EU plans to tighten its external infrastructure funding pool by stopping project loans to non-EU countries that use Huawei equipment.
+In a podcast interview, respected developer Simon Willison shared his realization that the distinct practices of 'vibe coding' and 'agentic engineering' have started to blur in his own professional workflow, as he increasingly relies on AI agents to generate production-quality code without reviewing every line. This convergence signals a potential paradigm shift in software development, where the line between rapid, exploratory AI-assisted coding and rigorous, professional engineering is dissolving, raising important questions about responsibility, code quality, and the evolving role of the developer. Willison distinguishes 'vibe coding' (using AI to generate code without deep review, suitable for personal tools) from 'agentic engineering' (professionally using AI to build high-quality production systems). His concern stems from finding himself not reviewing AI-generated code for production use, which he previously considered irresponsible.
 
-telegram · zaihuapd · May 6, 14:00
+rss · Simon Willison · May 6, 14:24
 
-**Background**: In 2020, the EU issued a non-binding 'toolbox' of recommendations urging member states to restrict 'high-risk vendors' like Huawei and ZTE in 5G networks due to security concerns. The assessment of such vendors typically considers factors like a supplier's country of origin, its legal and governance framework, and potential for state interference. Securing the telecom supply chain is a growing global priority, as vulnerabilities can be exploited for espionage or disruption.
+**Background**: Vibe coding is a practice where developers describe a task in natural language to an AI, which then generates the code, often with minimal manual review. Agentic engineering refers to a more professional approach where experienced software engineers leverage AI coding agents as powerful tools to enhance their capabilities, focusing on building secure, maintainable, and high-quality production systems. The discussion highlights a tension between the speed and accessibility of AI tools and the traditional engineering rigor required for reliable software.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.thefinance360.com/eu-plans-to-phase-out-of-high-risk-tech-suppliers-in-critical-sectors-under-revised-cybersecurity-act/">EU Plans To Phase-Out of High - Risk Tech Suppliers In Critical...</a></li>
-<li><a href="https://www.cisa.gov/topics/information-communications-technology-supply-chain-security">Information and Communications Technology Supply Chain Security | Cybersecurity and Infrastructure Security Agency CISA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe coding - Wikipedia</a></li>
+<li><a href="https://www.stencilwash.com/blog/what-is-agentic-engineering">What Is Agentic Engineering? The Complete Guide</a></li>
+<li><a href="https://www.ibm.com/think/topics/vibe-coding">What is Vibe Coding? | IBM</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#telecommunications`, `#cybersecurity`, `#EU policy`, `#Huawei`, `#regulation`
+**Discussion**: The community discussion is multifaceted: some commenters argue that AI tools merely expose pre-existing lack of engineering discipline rather than creating it. Others strongly disagree with Willison's trust in AI for routine tasks, pointing out that even simple API endpoints involve numerous design decisions and that AI errors are becoming more subtle and harder to detect. A pragmatic view suggests 'vibe coding' is acceptable for personal, low-stakes projects where the user is the sole stakeholder.
+
+**Tags**: `#AI coding`, `#software engineering`, `#agentic engineering`, `#vibe coding`, `#developer tools`
 
 ---
 
 <a id="item-3"></a>
-## [NVIDIA, OpenAI, Microsoft Release Open-Source MRC Protocol for AI Clusters](https://blogs.nvidia.com/blog/spectrum-x-ethernet-mrc/) ⭐️ 8.0/10
+## [Google Cloud Fraud Defense replaces reCAPTCHA, raising device and privacy concerns.](https://cloud.google.com/blog/products/identity-security/introducing-google-cloud-fraud-defense-the-next-evolution-of-recaptcha/) ⭐️ 8.0/10
 
-NVIDIA, OpenAI, and Microsoft jointly released and open-sourced the Multipath Reliable Connection (MRC) protocol, a new RDMA transport protocol that uses packet spraying to enable concurrent data transmission across multiple network paths and features microsecond-level failure rerouting. This protocol directly addresses critical network congestion and GPU idle time issues in large-scale AI training clusters, potentially increasing throughput and stability for next-generation AI infrastructure like the Stargate project. The MRC protocol is already deployed on NVIDIA's Spectrum-X platform and Blackwell architecture, supporting clusters such as Microsoft's Fairwater and Oracle's OCI Abilene for training models like GPT-5.5. It is released as an Open Compute Project (OCP) specification to reduce industry fragmentation.
+Google has introduced Cloud Fraud Defense as the next evolution of its reCAPTCHA service, designed to secure the 'agentic web' where autonomous AI agents perform transactions. The new system requires modern mobile devices with specific operating systems for verification. This represents a fundamental shift in web security, potentially changing how users interact with websites by tying access to specific, attested devices. It raises significant questions about digital privacy, web accessibility for users without compliant devices, and the competitive landscape for alternative platforms. The system requires a modern Android device with Google Play Services or a modern iPhone/iPad, with device integrity verification likely being a future requirement. A proposed QR code-based challenge has been criticized by the community as a potential security risk if the code is compromised.
 
-telegram · zaihuapd · May 6, 14:39
+hackernews · unforgivenpasta · May 6, 17:59
 
-**Background**: Remote Direct Memory Access (RDMA) is a technology that allows computers in a network to exchange data directly from memory without involving the operating system, which is crucial for high-performance computing. In massive AI training clusters with tens of thousands of GPUs, traditional single-path networking can become a bottleneck, causing congestion and idle time. Packet spraying is a load-balancing technique that distributes data packets across multiple available network paths to better utilize total bandwidth.
+**Background**: reCAPTCHA is a widely used system from Google to distinguish human users from bots on the internet. The new Cloud Fraud Defense is designed for a more complex environment where not just humans, but also sophisticated bots and autonomous AI agents, may be interacting with websites, requiring more advanced trust evaluation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lOaEpHS0VSRTJ6Q0tCTlRzd3J5Z0FQAQ?hl=en-NG&gl=NG&ceid=NG:en">Google News - OpenAI and partners unveil MRC protocol for AI...</a></li>
-<li><a href="https://axbrief.com/blog/openai-bcrce">OpenAI's MRC Protocol : The Architecture Linking 131,000... - AX BRIEF</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Remote_direct_memory_access">Remote direct memory access - Wikipedia</a></li>
+<li><a href="https://aitoolly.com/ai-news/article/2026-05-07-google-cloud-introduces-fraud-defense-the-next-evolution-of-recaptcha-for-the-agentic-web">Google Cloud Fraud Defense: The Evolution of reCAPTCHA</a></li>
+<li><a href="https://support.apple.com/guide/deployment/managed-device-attestation-dep28afbde6a/web">Managed Device Attestation for Apple devices - Apple Support</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community discussion is highly critical, with major concerns centering on the mandatory requirement for specific mobile devices, which is seen as a barrier to web access and a potential tool for user de-anonymization. Users also express strong privacy fears about Google collecting device identifiers and worry about anti-competitive effects that could disadvantage rival search engines and advertising platforms.
+
+**Tags**: `#web security`, `#privacy`, `#Google Cloud`, `#reCAPTCHA`, `#bot detection`
+
+---
+
+<a id="item-4"></a>
+## [Google Chrome Accused of Silently Downloading 4GB AI Model](https://www.tomshardware.com/tech-industry/cyber-security/google-chrome-silently-downloads-4gb-ai-model-to-your-device-without-permission-report-claims-researcher-says-practice-may-violate-eu-law-waste-thousands-of-kilowatts-of-energy) ⭐️ 8.0/10
+
+Security researcher Alexander Hanff alleges that Google Chrome silently downloads a ~4GB Gemini Nano AI model file (weights.bin) to eligible devices in the background without user consent, and the browser automatically re-downloads it even if manually deleted. This practice raises serious concerns about user privacy and control, potentially violating EU GDPR laws, while also imposing significant environmental costs through carbon emissions and financial burdens on users with metered internet connections. The downloaded file is named 'weights.bin' and is approximately 4GB in size, with the automatic re-download behavior persisting even after manual deletion by the user.
+
+telegram · zaihuapd · May 6, 11:15
+
+**Background**: Gemini Nano is a smaller, on-device version of Google's Gemini AI model family designed to run locally on compatible hardware. Model weights files, like 'weights.bin', contain the core learned parameters of an AI model and are typically very large. The EU's General Data Protection Regulation (GDPR) sets strict rules for processing personal data, which can include data derived from user devices.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Gemini_(language_model)">Gemini (language model) - Wikipedia</a></li>
+<li><a href="https://deepmind.google/models/gemini/">Gemini 3 — Google DeepMind</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#privacy`, `#AI ethics`, `#Google Chrome`, `#GDPR`, `#environmental impact`
+
+---
+
+<a id="item-5"></a>
+## [EU considers mandatory removal of Huawei, ZTE gear from telecoms](https://t.me/zaihuapd/41247) ⭐️ 8.0/10
+
+The European Commission is considering upgrading its 2020 non-binding recommendation on 'high-risk vendors' into legally binding rules that would mandate all member states to remove Huawei and ZTE equipment from their telecom and broadband infrastructure. This represents a major regulatory shift that could reshape the European telecom landscape, intensify geopolitical tensions, and significantly impact the global market share of Chinese telecom equipment vendors. Non-compliant member states would face infringement proceedings and financial penalties, and the EU also plans to restrict infrastructure funding to non-EU countries using Huawei equipment.
+
+telegram · zaihuapd · May 6, 14:00
+
+**Background**: The EU's 2020 '5G Security Toolbox' provided non-binding guidelines for assessing risks from 5G vendors like Huawei. Open RAN technology, which promotes open interfaces and multi-vendor interoperability, is often discussed as a potential alternative to single-vendor equipment.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.telecomrevieweurope.com/articles/reports-and-coverage/how-the-eus-5g-toolbox-shapes-secure-connectivity/">How the EU’s 5G Toolbox Shapes Secure Connectivity - Telecom</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Open_RAN">Open RAN - Wikipedia</a></li>
+<li><a href="https://www.cisco.com/site/us/en/learn/topics/networking/what-is-open-ran-oran.html">What Is Open RAN (ORAN)? - Cisco</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#EU regulations`, `#Huawei`, `#telecom infrastructure`, `#cybersecurity`, `#geopolitics`
+
+---
+
+<a id="item-6"></a>
+## [NVIDIA, OpenAI, Microsoft Release Open-Source MRC Protocol for AI Clusters](https://blogs.nvidia.com/blog/spectrum-x-ethernet-mrc/) ⭐️ 8.0/10
+
+NVIDIA, OpenAI, and Microsoft have jointly released and open-sourced the Multipath Reliable Connection (MRC) protocol, a new RDMA transport protocol designed for large-scale AI workloads. The protocol is already operational on NVIDIA Spectrum-X and Blackwell architectures, supporting clusters like Microsoft Fairwater and Oracle OCI Abilene for training models such as GPT-5.5. This protocol directly addresses a critical bottleneck in AI supercomputing—network congestion that causes expensive GPUs to idle—by enabling more efficient and resilient data transport. Its release as an open standard through the Open Compute Project aims to reduce industry fragmentation and accelerate the build-out of next-generation AI infrastructure like the Stargate project. MRC is built on RoCEv2 and uses data packet spraying to distribute traffic across multiple paths simultaneously, coupled with microsecond-level fault rerouting for high availability. It is designed to provide reliable, high-goodput connectivity over standard best-effort Ethernet, which is a significant technical advancement for AI networking.
+
+telegram · zaihuapd · May 6, 14:39
+
+**Background**: RDMA (Remote Direct Memory Access) is a key technology for high-performance computing that allows servers to access each other's memory directly without involving the CPU, drastically reducing latency. In massive AI training clusters with thousands of GPUs, traditional single-path networking can become a severe bottleneck, making multipath solutions like MRC essential for maintaining throughput and stability.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.opencompute.org/documents/ocp-mrc-1-0-pdf">Multipath Reliable Connection (MRC) Specification</a></li>
+<li><a href="https://4sysops.com/archives/multipath-reliable-connection-mrc-a-new-open-networking-protocol-for-ai-supercomputers/">Multipath Reliable Connection (MRC): a new, open networking ...</a></li>
+<li><a href="https://www.servethehome.com/nvidia-spectrum-x-ethernet-mrc-is-the-custom-rdma-transport-protocol-for-gigascale-ai/">NVIDIA Spectrum-X Ethernet MRC is the Custom RDMA Transport ...</a></li>
 
 </ul>
 </details>
@@ -94,299 +159,158 @@ telegram · zaihuapd · May 6, 14:39
 
 ---
 
-<a id="item-4"></a>
-## [Apple's R&D Spending Surpasses 10% of Revenue, Focusing on AI to Reshape Hardware](https://www.cnbc.com/2026/05/06/apples-rd-spending-climbs-to-10percent-of-revenue-on-ai-investments.html) ⭐️ 8.0/10
-
-Apple's R&D spending as a percentage of revenue reached 10.3% in its March 2026 quarter, the first time it has surpassed 10% in 30 years, with R&D spending growth (34%) significantly outpacing revenue growth (17%). This substantial increase signals a major strategic pivot for Apple, positioning the company for a platform-reshaping era centered on artificial intelligence, which could significantly influence the future integration of AI across consumer hardware and the broader tech ecosystem. Apple's current AI investments are focused on on-device AI, custom silicon design, and private cloud computing, with reported projects including an upgraded Siri, a foldable iPhone, AI-powered glasses, and AirPods with cameras.
-
-telegram · zaihuapd · May 7, 01:00
-
-**Background**: On-device AI refers to running artificial intelligence models directly on a user's device (like a smartphone) rather than in the cloud, which enhances privacy and reduces latency. Apple has a long history of designing its own custom silicon chips (Apple Silicon) for its devices, a strategy that gives it tight control over hardware and software integration. Private cloud computing for AI involves using dedicated, secure cloud infrastructure to handle AI workloads, balancing the need for powerful processing with data privacy concerns.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://medium.com/@sahin.samia/on-device-ai-what-it-is-and-how-it-works-89721ee68792">On Device AI: What It Is and How It Works? | by Sahin Ahmed(Data Scientist/MLE) | Medium</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Apple_silicon">Apple silicon - Wikipedia</a></li>
-<li><a href="https://www.fierce-network.com/cloud/genai-driving-private-cloud-demand-could-stall-public-cloud-growth">GenAI is driving private cloud demand that could stall public cloud ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Apple`, `#AI`, `#R&D`, `#hardware`, `#business strategy`
-
----
-
-<a id="item-5"></a>
-## [Anthropic partners with SpaceX for compute, doubles Claude Code limits](https://t.me/zaihuapd/41259) ⭐️ 8.0/10
-
-Anthropic has partnered with SpaceX to utilize the full compute capacity of its Colossus 1 data center, gaining over 300 megawatts of new capacity with more than 220,000 NVIDIA GPUs within a month. Consequently, Claude Code's 5-hour rate limits for all paid plans have been doubled, peak-hour restrictions for Pro/Max users have been removed, and Claude Opus API rate limits have been significantly increased. This partnership provides Anthropic with a massive, immediate boost in computing resources to meet growing demand for its AI services, directly enhancing the user experience for developers and API consumers. It highlights the intense competition for AI infrastructure and the strategic alliances forming between leading AI labs and companies with large-scale data center assets. The deal grants Anthropic access to the entire capacity of the Colossus 1 facility, which is associated with SpaceX and xAI, involving over 300MW of power and a fleet of over 220,000 NVIDIA GPUs. The immediate user-facing impact includes doubled usage limits for Claude Code and the removal of peak-hour restrictions for its higher-tier subscribers.
-
-telegram · zaihuapd · May 7, 08:19
-
-**Background**: Claude Code is an AI-powered coding assistant developed by Anthropic that operates as a terminal-based agent or a VS Code extension, helping developers with code generation, editing, and understanding. The Colossus 1 data center is a large-scale AI compute facility associated with Elon Musk's ventures, SpaceX and xAI, designed to house massive clusters of GPUs for training and running AI models.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.datacenterdynamics.com/en/news/anthropic-to-use-all-of-spacex-xais-colossus-1-data-center-compute/">Anthropic to use all of SpaceX -xAI's Colossus 1 data center compute</a></li>
-<li><a href="https://www.aol.com/articles/anthropic-rent-ai-capacity-spacexs-180327894.html">Anthropic to rent all AI capacity at SpaceX 's Colossus data center</a></li>
-<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent, Terminal, IDE</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI infrastructure`, `#Anthropic`, `#SpaceX`, `#computing partnership`, `#API limits`
-
----
-
-<a id="item-6"></a>
-## [Xiaomi Open-Sources OmniVoice: A Minimalist TTS Model for 646 Languages](https://mp.weixin.qq.com/s/TCS_Sd10g_rvf1cszw673A) ⭐️ 8.0/10
-
-Xiaomi has open-sourced OmniVoice, a text-to-speech model that uses a minimalist bidirectional Transformer architecture to perform zero-shot voice cloning across 646 languages. The model claims superior training speed (100,000 hours per day) and inference efficiency (40x real-time on PyTorch) while outperforming commercial systems in quality tests. This open-source release provides a highly efficient and scalable solution for multilingual speech synthesis, significantly lowering the barrier for research and application in low-resource languages. Its performance claims, if validated, could challenge existing commercial TTS systems and advance the state-of-the-art in omnilingual AI. The model's efficiency stems from two key innovations: a full-codebook random masking strategy for training and initialization from a pre-trained large language model (LLM) to ensure intelligibility. It was trained on a massive 580,000-hour dataset spanning 646 languages, and its code, training scripts, and model weights are all publicly available.
-
-telegram · zaihuapd · May 7, 10:06
-
-**Background**: Text-to-Speech (TTS) technology converts written text into audible speech. Multilingual and zero-shot TTS, which can clone a voice from a short sample to speak new languages, is a major research challenge due to data scarcity and model complexity. Traditional autoregressive models generate speech sequentially, while bidirectional models like OmniVoice can process the entire sequence at once, potentially improving speed and coherence.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.alphaxiv.org/audio/2604.00688v3">OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/BERT_(language_model)">BERT (language model) - Wikipedia</a></li>
-<li><a href="https://www.emergentmind.com/topics/llm-initialization-for-nar-speech-generation">LLM Initialization for NAR Speech Generation</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#TTS`, `#speech-synthesis`, `#open-source`, `#multilingual`, `#AI`
-
----
-
 <a id="item-7"></a>
-## [Valve releases Steam Controller CAD files under Creative Commons license](https://www.digitalfoundry.net/news/2026/05/valve-releases-steam-controller-cad-files-under-creative-commons-license) ⭐️ 7.0/10
+## [Anthropic partners with SpaceX to boost Claude usage limits via massive GPU cluster.](https://www.anthropic.com/news/higher-limits-spacex) ⭐️ 8.0/10
 
-Valve has publicly released the CAD files for the external shell of the Steam Controller and its Puck under a Creative Commons license, providing STP and STL models along with engineering drawings. This move is significant for the open hardware and accessibility communities, as it empowers users and makers to create custom modifications, 3D-print replacement parts, and design adaptive controllers for players with disabilities. The released files include the surface topology models (STP and STL formats) and engineering drawings that specify critical features and keep-out zones for both the controller and the puck.
+Anthropic has partnered with SpaceX to utilize the full computing capacity of the Colossus 1 data center, gaining access to over 220,000 NVIDIA GPUs and 300 megawatts of new capacity. Effective immediately, this has led to doubled 5-hour rate limits for all Claude Code paid plans and the removal of peak-hour restrictions for Pro/Max users, alongside significantly increased API rate limits for Claude Opus. This partnership represents a major scaling of AI infrastructure by linking a leading AI safety company with a massive, SpaceX-controlled computing resource, directly addressing the compute bottleneck for advanced AI models. The immediate increase in usage limits for Claude Code and API will benefit developers and enterprise users by allowing more intensive and uninterrupted use of Anthropic's most capable models. The compute comes from SpaceX-xAI's Colossus 1 data center, with the new capacity of over 300 megawatts and 220,000+ NVIDIA GPUs becoming available within one month. Specific user-facing changes include doubled 5-hour rate limits for all Claude Code paid tiers and the removal of peak-hour restrictions for Pro and Max subscribers.
 
-hackernews · haunter · May 6, 15:44
+telegram · zaihuapd · May 6, 16:35
 
-**Background**: CAD (Computer-Aided Design) files are digital blueprints used to define the geometry of physical objects for manufacturing or 3D printing. A Creative Commons license is a type of public copyright license that enables the free distribution of an otherwise copyrighted work, often requiring attribution to the original creator. The open-source hardware movement encourages sharing hardware designs to foster innovation and accessibility.
+**Background**: Claude is a series of large language models developed by Anthropic, with Opus being its most capable tier. Claude Code is Anthropic's agentic coding tool designed to understand and edit entire codebases. The Colossus 1 data center is owned by xAI, a company under Elon Musk's SpaceX umbrella, and is known for housing a very large cluster of NVIDIA GPUs for AI training and inference.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://ospo.library.jhu.edu/learn-grow/licensing-overview/open-source-hardware/">Open Source Hardware – Open Source Programs Office</a></li>
-<li><a href="https://michaelweinberg.org/blog/2025/10/05/leading-licenses/">The Most Popular Open Source Hardware Licenses (2016-2025)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/List_of_open-source_hardware_projects">List of open - source hardware projects - Wikipedia</a></li>
+<li><a href="https://www.datacenterdynamics.com/en/news/anthropic-to-use-all-of-spacex-xais-colossus-1-data-center-compute/">Anthropic to use all of SpaceX-xAI's Colossus 1 data</a></li>
+<li><a href="https://www.anthropic.com/product/claude-code">Claude Code | Anthropic's agentic coding system</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude (language model ) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community response is largely positive, with many users highlighting the major benefit for disabled gamers who can now affordably 3D print custom, adaptive controller shells. However, some discussion points out concerns about the controller's software dependency on Steam, viewing it as a step towards a walled garden ecosystem.
-
-**Tags**: `#open-source hardware`, `#3D printing`, `#accessibility`, `#gaming`
+**Tags**: `#AI`, `#Computing Infrastructure`, `#Anthropic`, `#SpaceX`, `#NVIDIA GPUs`
 
 ---
 
 <a id="item-8"></a>
-## [The Illusion of Productivity in Modern Workplaces](https://nooneshappy.com/article/appearing-productive-in-the-workplace/) ⭐️ 7.0/10
+## [Valve Open-Sources Steam Controller CAD Files for Community Use](https://www.digitalfoundry.net/news/2026/05/valve-releases-steam-controller-cad-files-under-creative-commons-license) ⭐️ 7.0/10
 
-The article critiques how modern workplace practices have led to unnecessarily elongated artifacts and superficial productivity, with AI tools like LLMs automating aspects of management. This is significant because it exposes inefficiencies in tech workplaces that can waste resources and distort job markets, as AI changes how productivity is perceived and measured. Key details include the use of LLMs to automate management tasks like documentation, which can lead to over-engineering and superficial work, as highlighted in community comments about elongated artifacts.
+Valve has released the CAD files for the external shell of the Steam Controller and its Puck under a Creative Commons license, providing STP, STL models, and engineering drawings. This move significantly empowers the open-source hardware and modding communities, and is particularly impactful for accessibility, allowing for the creation of affordable, custom 3D-printed adaptations for players with disabilities. The released files cover the surface topology of the controller and puck but likely do not include internal electronic schematics; the license is Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA), which permits sharing and adaptation with attribution but restricts commercial use.
 
-hackernews · diebillionaires · May 6, 16:18
+hackernews · haunter · May 6, 15:44
 
-**Background**: Large Language Models (LLMs) are AI systems trained on vast text data to generate and understand language, commonly used in automation tasks. In workplaces, productivity is often measured by output volume rather than quality, leading to elongated documents and superficial efficiency.
+**Background**: A Creative Commons (CC) license is a standardized public copyright license that allows creators to grant others permission to share, use, and build upon their work under specified conditions. CAD (Computer-Aided Design) files are digital design files used to create precise 3D models, which are essential for manufacturing and 3D printing. The open-source hardware movement advocates for publicly sharing design files to foster community innovation and modification.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Large_language_model">Large language model - Wikipedia</a></li>
-<li><a href="https://www.ibm.com/think/topics/large-language-models">What Are Large Language Models (LLMs)? | IBM</a></li>
-<li><a href="https://aws.amazon.com/what-is/large-language-model/">What is LLM? - Large Language Models Explained - AWS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Creative_Commons_license">Creative Commons license - Wikipedia</a></li>
+<li><a href="https://blog.prusa3d.com/core-one-cad-files-release-under-the-new-open-community-license-ocl_127290/">Open-sourcing CORE One CAD Files Under the New Open Community ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community discussion shows strong agreement with the article's critique, with users sharing personal experiences of elongated workplace artifacts and debating the impact of AI on tech job markets and engineering culture.
+**Discussion**: The community response is largely positive, with users praising the friendly documentation and highlighting the significant benefit for players with disabilities who can now create custom, affordable controllers. However, some comments express frustration over the controller's immediate sell-out and scalper prices, while others speculate about Valve's broader hardware strategy and supply chain.
 
-**Tags**: `#workplace productivity`, `#AI impact`, `#software engineering`, `#job market`, `#tech culture`
+**Tags**: `#open-source hardware`, `#gaming peripherals`, `#3D printing`, `#accessibility`, `#Valve`
 
 ---
 
 <a id="item-9"></a>
-## [AI Coding Practices Blur: Vibe Coding Meets Agentic Engineering](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/#atom-everything) ⭐️ 7.0/10
+## [SQLite Endorsed by Library of Congress for Long-Term Data Preservation](https://sqlite.org/locrsf.html) ⭐️ 7.0/10
 
-In a podcast discussion, respected developer Simon Willison shared his personal realization that the practices of 'vibe coding' and 'agentic engineering' have started to converge in his own work, a development he finds 'quite upsetting'. This convergence challenges the previously held distinction between casual, unchecked AI code generation and professional, supervised AI-assisted engineering, raising important questions about software quality, responsibility, and the evolving role of the developer. Willison, a veteran engineer, notes that as AI coding agents become more reliable, he finds himself reviewing less generated code even for production systems, which creates a sense of guilt about professional responsibility.
+The U.S. Library of Congress has officially recommended SQLite as a storage format for the long-term preservation of digital content, a designation that underscores its reliability and stability. This endorsement from a leading cultural heritage institution significantly boosts SQLite's credibility for archival and preservation use cases, influencing how organizations and developers choose formats for critical, long-lived data. SQLite's suitability for preservation is attributed to its self-contained, serverless nature and its stable, well-documented file format, which ensures data remains accessible over decades without dependency on specific software versions.
 
-rss · Simon Willison · May 6, 14:24
+hackernews · whatisabcdefgh · May 6, 21:58
 
-**Background**: Vibe coding is a practice where a developer describes a task in natural language to an AI, which generates the code, often without the developer deeply reviewing or understanding the output. Agentic engineering, in contrast, is a more disciplined approach where a professional engineer uses AI agents as tools under strict oversight to build high-quality, production-ready systems.
+**Background**: The Library of Congress maintains a 'Recommended Formats Statement' (RFS) to guide institutions in selecting sustainable formats for long-term preservation. SQLite is an embedded, public-domain database engine whose entire database is stored in a single, cross-platform disk file, making it a de facto standard for local data storage in countless applications.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe coding - Wikipedia</a></li>
-<li><a href="https://www.ibm.com/think/topics/agentic-engineering">What is agentic engineering? - IBM</a></li>
-<li><a href="https://www.glideapps.com/blog/what-is-agentic-engineering">What is agentic engineering? How AI engineering has evolved ...</a></li>
+<li><a href="https://sqlite.org/aff_short.html">Benefits of SQLite As A File Format</a></li>
+<li><a href="https://www.digitalpreservation.gov/about/resources.html">Library of Congress Digital Preservation Resources - Digital</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments reflect diverse views: some argue that vibe coding merely exposes pre-existing lax engineering standards, while others question the reliability of AI-generated code, noting that errors can be subtle and hard to detect. A viewpoint also suggests that vibe coding has valid use cases for personal, low-stakes projects.
+**Discussion**: The discussion highlights diverse perspectives: some users praise SQLite's simplicity and reliability for most applications, while others point out organizational concerns about data governance since its files can be easily copied, potentially leading to uncontrolled proliferation of sensitive data. A few comments also note the news is several years old but still valuable, and one user shares a custom, lighter alternative for read-only use cases.
 
-**Tags**: `#AI coding`, `#vibe coding`, `#agentic engineering`, `#software engineering`, `#developer tools`
+**Tags**: `#SQLite`, `#databases`, `#data-storage`, `#Library-of-Congress`, `#software-engineering`
 
 ---
 
 <a id="item-10"></a>
-## [Google Cloud Launches Fraud Defense as Next-Gen reCAPTCHA](https://cloud.google.com/blog/products/identity-security/introducing-google-cloud-fraud-defense-the-next-evolution-of-recaptcha/) ⭐️ 7.0/10
+## [Val Town's Journey Through Auth Providers: Supabase, Clerk, Better Auth](https://blog.val.town/better-auth) ⭐️ 7.0/10
 
-Google Cloud has introduced Fraud Defense, positioning it as the next evolution of its reCAPTCHA service, with a new focus on detecting account takeover and payment fraud through advanced risk scoring and device attestation. This marks a significant shift from traditional CAPTCHA puzzles towards a more complex, device-centric fraud detection model, which could fundamentally change how websites verify users and impact web accessibility and privacy norms. The service requires users to have a modern Android device with Google Play Services or an iOS device for verification, and it claims to be 400% more effective at detecting account takeover attempts than standard bot scores.
+The engineering team at Val Town published a detailed blog post documenting their migration journey through three authentication providers: starting with Supabase, moving to Clerk, and finally settling on the open-source framework Better Auth. This case study provides a rare, honest look at the practical trade-offs between different managed authentication solutions, highlighting how a startup's evolving needs can drive such migrations and validating the value of newer open-source alternatives like Better Auth. The post details specific pain points encountered with each service, such as limitations with Supabase's auth and cost considerations with Clerk, which ultimately led them to adopt Better Auth for its flexibility and control.
 
-hackernews · unforgivenpasta · May 6, 17:59
+hackernews · stevekrouse · May 6, 17:19
 
-**Background**: reCAPTCHA is a widely used service from Google that helps protect websites from spam and abuse by distinguishing human users from bots. reCAPTCHA Enterprise is its commercial, more advanced version. Device attestation is a security process where a device cryptographically proves its authenticity and integrity to a service.
+**Background**: Supabase is an open-source Backend-as-a-Service (BaaS) that includes built-in authentication. Clerk is a popular, fully managed authentication and user management service known for its drop-in UI components. Better Auth is a newer, open-source, framework-agnostic authentication library for TypeScript that aims to give developers more control and extensibility compared to fully managed services.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cloud.google.com/security/products/fraud-defense">Fraud Defense | Google Cloud</a></li>
-<li><a href="https://cloud.google.com/security/products/recaptcha">reCAPTCHA website security and fraud protection | Google Cloud</a></li>
+<li><a href="https://github.com/better-auth/better-auth">GitHub - better-auth/better-auth: The most comprehensive ...</a></li>
+<li><a href="https://clerk.com/">Clerk | Authentication and User Management</a></li>
+<li><a href="https://supabase.com/docs/guides/auth">Auth - Supabase Docs</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community discussion is highly critical, with major concerns that the device requirements will lock out users without specific smartphones, create a de-facto mandate for Google or Apple devices, and raise serious privacy issues by potentially using device identifiers for de-anonymization. Many also question the security of using QR codes for authentication and see anti-competitive implications.
+**Discussion**: The discussion sparked debate on the necessity of third-party auth, with one commenter questioning why developers would outsource a simple users table. The creator of Better Auth, Bekacru, directly engaged, expressing joy at seeing the project's value. Other comments defended the practice of writing custom auth code for specific needs and praised the blog for its honest engineering insights.
 
-**Tags**: `#reCAPTCHA`, `#fraud detection`, `#web security`, `#privacy`, `#Google Cloud`
+**Tags**: `#authentication`, `#software engineering`, `#migration`, `#web development`, `#open-source`
 
 ---
 
 <a id="item-11"></a>
-## [Developer Migrates from Supabase & Clerk to Better Auth, Citing Time Savings](https://blog.val.town/better-auth) ⭐️ 7.0/10
+## [Live Blog of Anthropic's Code w/ Claude 2026 Event](https://simonwillison.net/2026/May/6/code-w-claude-2026/#atom-everything) ⭐️ 7.0/10
 
-A developer shared their experience migrating their authentication system from Supabase and Clerk to a newer tool called Better Auth, which they found to be a significant time saver for their projects. This migration highlights ongoing developer concerns about the cost and vendor lock-in of established authentication providers, and introduces Better Auth as a compelling, open-source alternative that could influence how developers approach auth infrastructure. Better Auth is a framework-agnostic authentication and authorization framework for TypeScript that offers a comprehensive feature set and a plugin ecosystem, aiming to simplify adding advanced functionalities.
+Simon Willison is providing live blog coverage of the morning keynote sessions at Anthropic's Code w/ Claude 2026 event. This event is significant as it showcases advancements in AI-assisted coding tools from Anthropic, potentially impacting developers and the broader AI ecosystem. The event focuses on Claude Code, an AI tool for generating computer code, and features live updates from keynote sessions.
 
-hackernews · stevekrouse · May 6, 17:19
+rss · Simon Willison · May 6, 15:58
 
-**Background**: Supabase and Clerk are popular third-party authentication service providers that handle user management, sessions, and security for web applications. Supabase integrates auth with its database, while Clerk offers hosted UI components and session lifecycle management. Better Auth positions itself as an open-source, self-hostable framework that gives developers more control over their auth stack.
+**Background**: Claude is a series of large language models developed by Anthropic, first released in 2023, with models like Haiku, Sonnet, and Opus. Claude Code is an AI tool built on these models that can generate computer code from prompts, enhancing developer workflows. The Code w/ Claude event is a developer conference likely to announce updates and applications for these technologies.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://supabase.com/docs/guides/auth">Use Supabase to Authenticate and Authorize your users.</a></li>
-<li><a href="https://clerk.com/user-authentication">User Authentication</a></li>
-<li><a href="https://github.com/better-auth/better-auth">GitHub - better-auth/better-auth: The most comprehensive authentication framework · GitHub</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude (language model) - Wikipedia</a></li>
+<li><a href="https://www.nytimes.com/2026/01/23/technology/claude-code.html">Five Ways People Are Using Claude Code - The New York Times</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussion is highly engaged, with users praising Better Auth for cost savings on side projects and debating the merits of self-hosting auth versus using third-party services. A key point of contention is the complexity of building auth from scratch, with some arguing it's manageable and others highlighting the risks. The founder of Better Auth also participated, expressing joy at the tool's positive impact and openness to feedback.
-
-**Tags**: `#authentication`, `#web-development`, `#software-engineering`, `#developer-tools`
+**Tags**: `#ai`, `#llms`, `#anthropic`, `#claude-code`, `#live-blog`
 
 ---
 
 <a id="item-12"></a>
-## [Hallucinopedia: A Website Showcasing AI Hallucinations](http://halupedia.com/) ⭐️ 7.0/10
+## [Apple's R&D Spending Surpasses 10% of Revenue, Fueling AI-Driven Hardware Strategy](https://www.cnbc.com/2026/05/06/apples-rd-spending-climbs-to-10percent-of-revenue-on-ai-investments.html) ⭐️ 7.0/10
 
-A new web application called Hallucinopedia has been launched, which uses AI to generate fake, Wikipedia-style articles on demand based on any user-provided URL slug, vividly demonstrating the phenomenon of AI hallucinations. This project serves as a creative and accessible public demonstration of a major limitation in large language models, helping to educate users about the risks of trusting AI-generated information without verification. The website allows users to generate a new hallucinated article by simply navigating to any arbitrary URL path, and the content is regenerated fresh each time, though this open design has already led to instances of the site being defaced with hateful content.
+Apple's R&D spending as a percentage of revenue reached 10.3% in its March 2026 quarter, surpassing the 10% threshold for the first time in 30 years, with R&D expenditure growth of 34% significantly outpacing its 17% revenue growth. This significant increase in R&D intensity signals Apple's urgent strategic pivot towards artificial intelligence, aiming to reshape its hardware ecosystem and maintain its competitive edge in the next platform era, potentially influencing the entire tech industry's investment direction. Apple's AI investments are focused on on-device AI, proprietary chip development, and a 'Private Cloud Compute' infrastructure, with reported product plans including an upgraded Siri, a foldable iPhone, AI-powered glasses, and AirPods with cameras.
 
-hackernews · bstrama · May 6, 16:37
+telegram · zaihuapd · May 7, 01:00
 
-**Background**: Hallucination in large language models refers to the tendency of AI systems to generate text that is fluent and plausible but factually incorrect, logically inconsistent, or entirely fabricated. This is a well-documented challenge in AI research, as models generate responses based on statistical patterns in training data rather than verified knowledge. Projects like Hallucinopedia make this abstract technical problem tangible for a general audience.
+**Background**: On-device AI refers to running artificial intelligence models directly on a user's device (like a smartphone) rather than relying on cloud servers, which enhances privacy and enables offline functionality. Private Cloud Compute is Apple's concept for using its own secure, independent servers to handle more complex AI tasks while maintaining user data privacy, creating a hybrid AI processing model.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2311.05232">A Survey on Hallucination in Large Language Models ...</a></li>
-<li><a href="https://ideaverse.ai/blog/hallucinopedia-a-fake-encyclopedia-that-materializes-new-pages-moumyws6">Hallucinopedia: A Fake Encyclopedia That Materializes New ...</a></li>
-<li><a href="https://news.ycombinator.com/item?id=48038257">Show HN: Hallucinopedia | Hacker News</a></li>
+<li><a href="https://semiconductor.samsung.com/technologies/processor/on-device-ai/">On-device AI | Technologies | Samsung Semiconductor Global</a></li>
+<li><a href="https://iphonewired.com/news/804908/">Apple’s “Private Cloud Compute” revealed: AI computing</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Hacker News discussion highlights a mix of fascination and concern; users found the project fantastic for demonstrating AI quirks, but many were alarmed by the ease with which the site was defaced with hateful and antisemitic content, raising ethical questions about such open-ended AI demonstrations.
-
-**Tags**: `#AI`, `#LLMs`, `#hallucinations`, `#web-app`, `#hacker-news`
+**Tags**: `#Apple`, `#AI`, `#R&D`, `#Hardware`, `#Strategic Investment`
 
 ---
 
 <a id="item-13"></a>
-## [Anthropic hosts 'Code w/ Claude 2026' developer event, live-blogged by Simon Willison](https://simonwillison.net/2026/May/6/code-w-claude-2026/#atom-everything) ⭐️ 7.0/10
+## [Tencent's Hy3 preview model sees 10x call volume surge, tops OpenRouter weekly chart](https://finance.sina.com.cn/tech/shenji/2026-05-07/doc-inhwzrtp8521239.shtml) ⭐️ 7.0/10
 
-Anthropic held its 'Code w/ Claude 2026' event, where the morning keynote sessions were live-blogged by developer Simon Willison, focusing on the company's AI-powered coding tool, Claude Code. This event signals Anthropic's dedicated push into the AI-assisted software development market, showcasing how their Claude models are being integrated into practical developer workflows to potentially transform coding productivity. The event is centered on Claude Code, Anthropic's agentic coding tool that operates in the terminal, understands codebases, and can execute tasks, edit files, and manage git workflows via natural language commands.
-
-rss · Simon Willison · May 6, 15:58
-
-**Background**: Claude Code is an AI-powered coding assistant from Anthropic designed to act as an 'agentic' tool for developers. Unlike simple code completion, it can understand a project's context, perform multi-step engineering tasks, and interact with the development environment directly. The 'Code w/ Claude' event is a dedicated conference for developers to learn about and build with these AI coding capabilities.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent, Terminal, IDE</a></li>
-<li><a href="https://github.com/anthropics/claude-code/releases">Releases · anthropics/ claude - code</a></li>
-<li><a href="https://www.youtube.com/watch?v=AJpK3YTTKZ4">Introducing Claude Code - YouTube</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#ai`, `#generative-ai`, `#anthropic`, `#claude-code`, `#live-blogging`
-
----
-
-<a id="item-14"></a>
-## [Google Chrome Accused of Silently Downloading 4GB AI Model](https://www.tomshardware.com/tech-industry/cyber-security/google-chrome-silently-downloads-4gb-ai-model-to-your-device-without-permission-report-claims-researcher-says-practice-may-violate-eu-law-waste-thousands-of-kilowatts-of-energy) ⭐️ 7.0/10
-
-Google Chrome has been accused of silently downloading a 4GB Gemini Nano AI model file to eligible devices without user consent, with the browser automatically re-downloading it even if manually deleted. This practice raises significant concerns about user privacy, potential violations of GDPR, and the environmental impact of large-scale data distribution. Researcher Alexander Hanff estimates that distributing the model to 1 billion users could generate approximately 60,000 tons of carbon emissions, and the 4GB download imposes financial costs on users with metered internet.
-
-telegram · zaihuapd · May 6, 11:15
-
-**Background**: Gemini Nano is a smaller AI model from Google designed for on-device tasks, enabling generative AI experiences without cloud connectivity. Silent downloading refers to a browser automatically downloading files in the background without explicit user approval.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Gemini_(language_model)">Gemini (language model) - Wikipedia</a></li>
-<li><a href="https://developer.android.com/ai/gemini-nano">Gemini Nano | AI | Android Developers</a></li>
-<li><a href="https://www.linkedin.com/pulse/chrome-just-put-4-gb-ai-model-your-device-without-asking-james-w-ymcxc/">Chrome Just Put a 4 GB AI Model on Your Device ... - LinkedIn</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#privacy`, `#AI deployment`, `#Google Chrome`, `#GDPR`, `#environmental impact`
-
----
-
-<a id="item-15"></a>
-## [Apple's Display Supply Chain: BOE Gets iPhone 17 Pro Order, Samsung Exclusive for Foldable OLED](https://t.me/zaihuapd/41254) ⭐️ 7.0/10
-
-Apple has approved BOE to mass-produce OLED screens for the iPhone 17 Pro, initially for the Chinese market only, marking BOE's entry into the high-end iPhone supply chain. Separately, Samsung Display has initiated a dedicated production line for Apple's foldable OLED panels, with a monthly capacity of 35,000 sixth-generation glass substrates. These developments significantly alter the competitive landscape for smartphone displays, with BOE breaking Samsung and LG's dominance in Apple's premium models and Samsung securing a key role in Apple's anticipated entry into the foldable phone market. This could influence pricing, innovation, and supply chain resilience across the entire smartphone industry. BOE's qualification for iPhone 17 Pro display module production is expected to be approved by July 2025. Samsung's foldable OLED line is designed to produce approximately 15 million 7-inch panels annually, aligning with Apple's rumored 2026 launch of an inward-folding iPhone with a first-year target of 60 million units.
-
-telegram · zaihuapd · May 7, 02:33
-
-**Background**: OLED (Organic Light-Emitting Diode) is a display technology where each pixel emits its own light, enabling thinner, more flexible screens with better contrast. A sixth-generation (G6) glass substrate is a large-format sheet used in display manufacturing that can be efficiently cut into multiple panels for devices like smartphones and tablets. An inward-folding design, as opposed to an outward-folding one, protects the main display by folding the screen inward like a book.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://global.samsungdisplay.com/31384?type=main">Samsung Display’s Foldable OLED Panel Proves Exceptional ...</a></li>
-<li><a href="https://www.tomshardware.com/tech-industry/semiconductors/china-moves-into-semiconductor-glass-substrates-as-packaging-competition-intensifies">China moves into manufacturing disruptive new semiconductor glass substrates as processor packaging competition intensifies | Tom's Hardware</a></li>
-<li><a href="https://www.yugatech.com/mobile/tecno-phantom-ultimate-g-fold-worlds-first-inward-folding-tri-fold-announced/">TECNO PHANTOM Ultimate G Fold: world’s first inward - folding ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Apple`, `#supply chain`, `#display panels`, `#foldable phones`, `#BOE`
-
----
-
-<a id="item-16"></a>
-## [Tencent's Hy3 Preview Model Sees 10x More Usage Than Hy2 in Two Weeks, Tops OpenRouter Charts](https://finance.sina.com.cn/tech/shenji/2026-05-07/doc-inhwzrtp8521239.shtml) ⭐️ 7.0/10
-
-Tencent's Hy3 preview model has achieved ten times the total token call volume of its predecessor, Hy2, within just two weeks of its launch. According to OpenRouter's data for the past week, the model ranked first in both the platform's overall weekly chart and market share, and also topped the charts for coding and tool-calling scenarios. The rapid adoption of Hy3 preview, especially in coding and agent-based applications, signals strong market demand for high-performance, cost-effective models tailored for agentic workflows. This success could accelerate the development and deployment of AI agents in production environments and solidify Tencent's position in the competitive AI model landscape. Hy3 preview is a 295-billion-parameter Mixture-of-Experts (MoE) model with 21 billion active parameters, designed for efficiency in agentic and production use cases. The model is currently offered for free on OpenRouter, which likely contributed to the initial surge in usage as developers tested it in real-world scenarios.
+Tencent's Hy3 preview model has achieved ten times the token call volume of its predecessor, Hy2, within just two weeks of its launch, and it has ranked first in both total volume and market share on the OpenRouter platform's weekly chart. This rapid adoption indicates significant developer interest in high-performance models optimized for code generation and agentic workflows, highlighting a key trend in AI application development. The model is a high-efficiency Mixture-of-Experts (MoE) architecture with 295 billion total parameters, and its growth was particularly strong in programming and tool invocation scenarios, with a 16.5x increase in related applications.
 
 telegram · zaihuapd · May 7, 05:34
 
-**Background**: A Mixture-of-Experts (MoE) model is an architecture where only a subset of the model's parameters (the 'experts') is activated for any given input, which improves computational efficiency. OpenRouter is a platform that provides a unified API to access and compare various large language models (LLMs) from different providers. 'Tool calling' or 'function calling' is a key capability for AI agents, allowing them to interact with external software, APIs, and services to perform complex tasks beyond simple text generation.
+**Background**: OpenRouter is a platform that provides developers with a unified API to access hundreds of different large language models (LLMs). Tool invocation refers to the capability of LLMs to interact with external software tools or APIs to perform complex tasks, which is crucial for building AI agents. A Mixture-of-Experts (MoE) model is an architecture that uses a gating mechanism to selectively activate only a subset of its parameters for each input, aiming to improve computational efficiency.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/tencent/Hy3-preview">tencent / Hy 3 - preview · Hugging Face</a></li>
-<li><a href="https://openrouter.ai/tencent/hy3-preview:free">Hy 3 preview (free) - API Pricing & Providers | OpenRouter</a></li>
-<li><a href="https://openrouter.ai/">OpenRouter</a></li>
+<li><a href="https://gigazine.net/gsc_news/en/20260424-tencent-hy3/">Tencent unveils high-performance inference model 'Hy3 preview,'</a></li>
+<li><a href="https://topaihubs.com/llm-price/tencent-hy3-preview-free">Tencent: Hy3 preview (free) - AI Model Pricing and Capabilities</a></li>
+<li><a href="https://www.codecademy.com/article/what-is-openrouter">What is OpenRouter? A Guide with Practical Examples - Codecademy</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Tencent`, `#OpenRouter`, `#Coding`, `#Agent`
+**Tags**: `#AI`, `#LargeLanguageModels`, `#Tencent`, `#OpenRouter`, `#SoftwareEngineering`
 
 ---
